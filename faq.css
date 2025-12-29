@@ -65,6 +65,13 @@ height: 100%;
  transition: all 0.3s ease;
 }
 
+@media screen and (max-width:1024px) {
+   .questions-section{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
 @media screen and (max-width:768px) {
   .questions-section{
     padding-left: 3rem;

@@ -134,12 +134,18 @@ width: 70px;
     background-color: transparent;
 }
 
+@media screen and (max-width:1024px) {
+  .tribes-section{
+    padding-left:2rem ;
+    padding-right: 2rem;
+  }
+}
+
 @media screen and (max-width:768px) {
   .tribes-section{
     flex-direction: column;
     gap: 30px;
-    padding-left: 3rem;
-    padding-right: 3rem;
+   
   }
 
   .tribe1, .tribe2, .tribe3{
@@ -149,12 +155,35 @@ width: 70px;
 
   .tribes{
     padding-top: 4rem;
+   
+  }
+
+  .tribes h1{
+    text-align: start;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .tribes p{
+    text-align: start;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
 @media screen and (max-width:480px) {
   .tribes-section{
-     padding-left: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .tribes h1{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .tribes p{
+    padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
 }

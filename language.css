@@ -111,6 +111,36 @@
 }
 
 
+@media screen and (max-width:768px) {
+
+  .languages-section{
+   padding-left: 3rem;
+   padding-right: 3rem;
+
+  }
+  .languages-section .p{
+    width: 100%;
+    text-align: start;
+  }
+
+  .languages-section h2{
+    text-align: start;
+    line-height: 1.7rem;
+  }
+
+  .languages{
+    justify-content: start;
+  }
+}
+
+@media screen and (max-width:480px) {
+    .languages-section{
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+
+  }
+}
+
 
 
 

@@ -121,14 +121,30 @@ font-weight: 400;
 }
 
 
+@media screen and (max-width:1024px) {
+  .service-section{
+    gap: 4rem;
+  }
+}
+
 @media screen and (max-width:768px) {
   .service-section{
     flex-direction: column;
     gap: 20px;
   }
+  
+  
+
+/*addded this */
+  .services-heading h1{
+  text-align: start;
+  line-height: 1.7rem;
+  }
 
  .wrap1 p{
+  /*
   text-align: center;
+  */
  }
 
   .service-wrap{
@@ -142,7 +158,9 @@ font-weight: 400;
 
   .wrap1{
     height: fit-content;
+    /*
     align-items: center;
+    */
   }
 
 

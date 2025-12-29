@@ -169,9 +169,10 @@ opacity: 0;
   }
   
   .text{
-    align-items: center;
+    align-items: start;
     padding-left: 0;
     width: 100%;
+    
   }
 
   .text h1{
@@ -179,7 +180,7 @@ opacity: 0;
   }
 
   .text p{
-    text-align: center;
+    text-align: start;
   }
 }
 

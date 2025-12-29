@@ -180,6 +180,13 @@ ul li span{
   width: 70px;
 }
 
+@media screen and (max-width:1024px) {
+  .market-section{
+    padding-left:2rem ;
+    padding-right: 2rem;
+  }
+}
+
 @media screen and (max-width:768px) {
   .market-section{
     flex-direction: column;
