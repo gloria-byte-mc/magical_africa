@@ -293,3 +293,19 @@ ctaLinks.forEach(link => {
     }
   });
 });
+
+
+
+const Home = document.getElementById("home");
+
+Home.addEventListener('click', ()=>{
+  window.location.href = "index.html"
+});
+
+
+
+const Logo = document.getElementById("logo-header");
+
+Logo.addEventListener("click", ()=>{
+  window.location.href = "index.html"
+});

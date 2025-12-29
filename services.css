@@ -145,5 +145,16 @@ font-weight: 400;
     align-items: center;
   }
 
+
 }
+
+
+
+ @media screen and (max-width:480px) {
+    .services{
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  }
+
 

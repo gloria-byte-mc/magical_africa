@@ -75,3 +75,10 @@ height: 100%;
     padding-top: 4rem;
   }
 }
+
+@media screen and (max-width:480px) {
+    .questions-section{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}

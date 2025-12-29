@@ -151,3 +151,10 @@ width: 70px;
     padding-top: 4rem;
   }
 }
+
+@media screen and (max-width:480px) {
+  .tribes-section{
+     padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
