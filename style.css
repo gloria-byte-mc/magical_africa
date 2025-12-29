@@ -1,0 +1,285 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.025rem;
+}
+
+.hero-section{
+  height: 100vh;
+  background-image: url(images/pyramids.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  
+}
+
+
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+  justify-content: space-between;
+   padding-left: 3rem;
+  padding-right: 3rem;
+  transition: 0.3s ease;
+  
+}
+
+.item2 h1{
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.item1{
+ display: flex;
+ flex-direction: row;
+ gap: 15px;
+
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 0.875rem;
+  color: white;
+}
+.menu i{
+  font-size: 1rem;
+}
+
+.search{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  background-color: transparent;
+ font-size: 0.875rem;
+ color: white;
+}
+
+.search i{
+  font-size: 1rem;
+}
+
+.item3{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  
+}
+.item3 a{
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: white;
+  
+  
+}
+.item3 i{
+  font-size: 1rem;
+  color: white;
+  
+}
+
+.navbar.scrolled {
+  background-color: white;
+  border-bottom: 0.5px solid #e5e3e3;
+}
+
+/* Change text colors when scrolled */
+.navbar.scrolled .menu,
+.navbar.scrolled .search,
+.navbar.scrolled .item2 h1,
+.navbar.scrolled .item3 a,
+.navbar.scrolled .item3 i {
+  color: black;
+}
+
+.navbar:hover{
+  background-color: white;
+}
+
+.navbar:hover .menu,
+.navbar:hover .search,
+.navbar:hover .item2 h1,
+.navbar:hover .item3 a ,
+.navbar:hover .item3 i
+{
+  color: black;
+}
+
+.side-menu{
+  background-color: white;
+  position: absolute;
+  height: 100vh;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in-out;
+  z-index: 1000;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+  
+}
+
+.side-menu.active{
+      transform: translateX(0);
+    }
+
+   .menu-overlay{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+      z-index: 999;
+    }
+
+    .menu-overlay.active{
+      opacity: 1;
+      visibility: visible;
+    }
+
+.side-header{
+  height: 5.5rem;
+  display: flex;
+  align-items: center;
+ 
+}
+.side-header button{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+   gap: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+.side-header button i{
+  font-size: 1rem;
+ 
+}
+.side-header button span{
+  font-size: 0.875rem;
+}
+
+
+
+.side-content ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 0;
+  
+  }
+
+.side-content ul li{
+  list-style: none;
+  font-size: 1.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side-content ul li i{
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.side-content ul li:hover i{
+ opacity: 1;
+}
+
+
+
+
+
+.hero-content{
+  justify-self: center;
+  color: white;
+  position: absolute;
+  bottom: 10%;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.hero-content h1{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.CTA-buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.CTA-buttons a{
+  font-size: 0.875rem;
+  color: white;
+
+}
+
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); 
+  z-index: 1;
+}
+
+.navbar {
+ 
+ 
+  z-index: 100; 
+}
+
+.hero-content {
+   z-index: 2; 
+}
+
+
+@media screen and (max-width:768px) {
+  .item2{
+    display: none;
+  }
+
+  .navbar{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+

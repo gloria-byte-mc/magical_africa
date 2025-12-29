@@ -1,0 +1,194 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.025rem;
+  line-height: 1.5rem;
+  
+}
+
+
+.marketplace h1{
+font-size: 1.5rem;
+padding-top: 2rem;
+font-weight: 400;
+text-align: center;
+}
+
+ul{
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 20px;
+}
+
+ul li{
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+  ul li.active{
+      font-weight: 600;
+    }
+
+
+ul li span{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px soild #e5e3e3#e5e3e3;
+  background-color: #F2EFEB;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 0.875rem;
+}
+
+ ul li.active span{
+      background-color: #333;
+      color: white;
+    }
+
+
+.market-section{
+  display: flex;
+  flex-direction:row ;
+  margin-top: 4rem;
+  
+  width: 100%;
+  height: 350px;
+  gap: 30px;
+  padding: 30px 120px;
+  
+}
+
+ 
+.market-section .section1{
+  background-color: white;
+  width: 100%;
+  background-image: url(images/pyramids.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+   overflow: hidden;
+  cursor: pointer;
+}
+
+.market-section .section2{
+  position: relative;
+  background-color: white;
+  width: 100%;
+ background-image: url(images/African-landscape.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.market-section .section3{
+  position: relative;
+  background-color: white;
+  width: 100%;
+ background-image: url(images/learn-language.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.description{
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  border: 0.5px solid  #e5e3e3;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  
+}
+
+
+
+.market-section .section1:hover .description,
+.market-section .section2:hover .description,
+.market-section .section3:hover .description
+{
+  transform: translateY(0);
+
+}
+
+
+
+  .description h3{
+      font-size: 1rem;
+     font-weight: 600;
+    }
+
+    .description p{
+      font-size: 0.875rem;
+      color: #767676;
+    }
+
+    .show-all2{
+ display: flex;
+ flex-direction: row;
+ gap: 10px;
+ align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.show-btn2{
+  display: flex;
+  flex-direction: row;
+  font-size: 0.875rem;
+  border: 1px solid rgb(181, 161, 145);
+  background-color: transparent;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-weight: 600;
+}
+.show-btn2:hover{
+  background-color: rgb(181, 161, 145);
+  color: white;
+}
+.show-all2 hr{
+  height: 0.5px;
+  width: 70px;
+}
+
+@media screen and (max-width:768px) {
+  .market-section{
+    flex-direction: column;
+    height: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .section1, .section2, .section3{
+    height: 500px;
+  }
+
+}

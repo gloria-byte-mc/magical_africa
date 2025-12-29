@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.025rem;
+  line-height: 1.5rem;
+  }
+
+  .about-section{
+    background-image: url(images/African-landscape.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .about-section h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+  }
+
+  .about-section p{
+    font-size: 1rem;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+   
+    width: 50%;
+  }
+
+  .learn-more2{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: white;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-weight: 600;
+    border: 1px solid  rgb(181, 161, 145);
+    background-color: transparent;
+  }
+
+  .learn-more2:hover{
+    background-color: rgb(181, 161, 145);
+  }

@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.025rem;
+  line-height: 1.5rem;
+  
+}
+
+.tribes{
+  height: fit-content;
+  
+  background-color: rgb(242, 239, 235);
+  
+  padding-top: 2rem;
+}
+
+.tribes h1{
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.tribes p{
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.tribes-section{
+  display: flex;
+  flex-direction: row;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 100%;
+}
+
+.tribe1, .tribe2, .tribe3{
+  height: 400px;
+  flex: 1;
+  background-image: url(images/kitenge.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 1.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tribe1 h1, .tribe2 h1, .tribe3 h1{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+   .tribe1::before, .tribe2::before, .tribe3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.5s ease;
+    z-index: 1;
+    }
+
+    .tribe1 {
+    background-image: url(images/Oromo.jpg);
+    }
+
+        .tribe1::before {
+            background-image: url(images/Oromo.jpg);
+        }
+
+        .tribe2 {
+            background-image: url(images/The\ Zulu\ of\ South\ Africa\ \(2\).jpg);
+        }
+
+        .tribe2::before {
+            background-image: url(images/The\ Zulu\ of\ South\ Africa\ \(2\).jpg);
+        }
+
+        .tribe3 {
+            background-image: url(images/Igbo.jpg);
+        }
+
+        .tribe3::before {
+            background-image: url(images/Igbo.jpg);
+        }
+
+        .tribe1:hover, .tribe2:hover, .tribe3:hover {
+            flex: 3.5;
+            
+        }
+
+        .tribe1:hover::before, .tribe2:hover::before, .tribe3:hover::before {
+            transform: scale(1);
+        }
+
+.view-more2{
+ padding-bottom: 2rem;
+ align-items: center;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ gap: 10px;
+}
+
+.view-more2 hr{
+ height: 0.5px;
+width: 70px;
+}
+
+.show-btn3{
+  display: flex;
+    flex-direction: row;
+    font-size: 0.875rem;
+    border: none;
+    background-color: transparent;
+}
+
+@media screen and (max-width:768px) {
+  .tribes-section{
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .tribe1, .tribe2, .tribe3{
+ flex: none;
+   
+  }
+
+  .tribes{
+    padding-top: 4rem;
+  }
+}

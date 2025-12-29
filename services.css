@@ -1,0 +1,149 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.025rem;
+  line-height: 1.5rem;
+  
+}
+
+.services{
+  
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  gap: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.services-heading h1{
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.service-section{
+display: flex;
+flex-direction: row;
+gap: 120px;
+
+}
+
+.service-wrap{
+display: flex;
+flex-direction: row;
+gap: 60px;
+width: 100%;
+}
+
+.wrap1{
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+ justify-content: center;
+ width: 100%;
+ height: 500px;
+}
+.wrap1 h1{
+font-size: 1rem;
+font-weight: 400;
+
+}
+.wrap1 p{
+  font-size: 0.875rem;
+  color: #767676;
+}
+
+.wrap2{
+
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+}
+
+
+.i{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.show-all{
+ display: flex;
+ flex-direction: row;
+ gap: 10px;
+ align-items: center;
+  justify-content: center;
+}
+
+.show-btn{
+  display: flex;
+  flex-direction: row;
+ font-size: 0.875rem;
+  border: none;
+  background-color: transparent;
+}
+
+.show-all hr{
+  height: 0.5px;
+  width: 70px;
+}
+
+.learn-more{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 1px solid rgb(181, 161, 145);
+  background-color: transparent;
+  width: 100%;
+  max-width: 150px;
+ 
+ 
+}
+
+.learn-more:hover{
+  background-color: rgb(181, 161, 145);
+  color: white;
+}
+
+
+@media screen and (min-width:1440px) {
+  .wrap1{
+    height: 600px;
+  }
+  .wrap2{
+    height: 600px;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  .service-section{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+ .wrap1 p{
+  text-align: center;
+ }
+
+  .service-wrap{
+    flex-direction: column;
+    gap: 60px;
+  }
+ 
+  .i{
+    display: none;
+  }
+
+  .wrap1{
+    height: fit-content;
+    align-items: center;
+  }
+
+}
+
