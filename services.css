@@ -170,8 +170,8 @@ font-weight: 400;
 
  @media screen and (max-width:480px) {
     .services{
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
   }
 
