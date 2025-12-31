@@ -227,11 +227,11 @@
   color: white;
   position: absolute;
   bottom: 10%;
-  
   display: flex;
   flex-direction: column;
   gap: 15px;
   align-items: center;
+  
 }
 
 .hero-content h1{

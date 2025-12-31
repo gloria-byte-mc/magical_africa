@@ -279,7 +279,7 @@ const ctaLinks = document.querySelectorAll('.CTA-buttons a');
 // Define background images for each link
 const backgroundImages = {
   'Learn Language': 'images/learn-language.jpg',
-  'Explore culture': 'images/spear.jpg'
+  'Explore culture': 'images/maasai.jpg'
 };
 
 

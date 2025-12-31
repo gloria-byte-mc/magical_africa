@@ -180,6 +180,32 @@ ul li span{
   width: 70px;
 }
 
+@media screen and (min-width:1440px) {
+  .marketplace{
+    
+    padding-bottom: 4rem;
+  }
+  .marketplace h1{
+    padding-top: 4rem;
+  }
+
+  .market-section{
+    margin-top: 6rem;
+    height: 500px;
+    padding: 0px 120px;
+  }
+
+  .show-all2{
+    padding-top: 6rem;
+  }
+
+  ul{
+    margin-top: 2rem;
+  }
+
+ 
+}
+
 @media screen and (max-width:1024px) {
   .market-section{
     padding-left:2rem ;
@@ -206,3 +232,4 @@ ul li span{
     padding-right: 1rem;
   }
 }
+

@@ -118,6 +118,12 @@ font-weight: 400;
   .wrap2{
     height: 600px;
   }
+
+.services{
+  
+  gap: 8rem;
+  padding-top: 4rem;
+}
 }
 
 
@@ -125,6 +131,7 @@ font-weight: 400;
   .service-section{
     gap: 4rem;
   }
+  
 }
 
 @media screen and (max-width:768px) {
@@ -174,5 +181,7 @@ font-weight: 400;
       padding-right: 1rem;
     }
   }
+
+
 
 

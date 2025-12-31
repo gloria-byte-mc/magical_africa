@@ -134,6 +134,24 @@ width: 70px;
     background-color: transparent;
 }
 
+@media screen and (min-width:1440px) {
+.tribes{
+  
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+.tribes-section{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.tribe1, .tribe2, .tribe3{
+  height: 500px;
+}
+.tribes p{
+  margin-top: 2rem;
+}
+}
+
 @media screen and (max-width:1024px) {
   .tribes-section{
     padding-left:2rem ;
@@ -187,3 +205,4 @@ width: 70px;
     padding-right: 1rem;
   }
 }
+

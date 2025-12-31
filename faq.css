@@ -65,6 +65,23 @@ height: 100%;
  transition: all 0.3s ease;
 }
 
+@media screen and (min-width:1440px) {
+  .FAQ{
+    
+   padding-top: 4rem;
+  }
+
+  .questions-section{
+    padding-bottom: 5rem;
+  }
+
+  .question{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+ 
+}
+
 @media screen and (max-width:1024px) {
    .questions-section{
     padding-left: 4rem;
