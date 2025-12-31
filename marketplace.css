@@ -207,6 +207,12 @@ ul li span{
 }
   */
 
+  @media screen and (min-width:1440px) {
+    .market-section{
+      height: 500px;
+    }
+  }
+
 @media screen and (max-width:1024px) {
   .market-section{
     padding-left:2rem ;
