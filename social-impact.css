@@ -185,6 +185,13 @@ opacity: 0;
   }
 }
 
+@media screen and (min-width:1440px) {
+  .text{
+    padding-left: 5rem;
+  }
+
+
+}
 
 @media screen and (max-width:480px) {
   .social-impact{

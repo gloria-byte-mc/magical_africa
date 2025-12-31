@@ -143,6 +143,8 @@ width: 70px;
 .tribes-section{
   padding-top: 6rem;
   padding-bottom: 6rem;
+  padding-left: 160px;
+  padding-right: 160px;
 }
 .tribe1, .tribe2, .tribe3{
   height: 500px;

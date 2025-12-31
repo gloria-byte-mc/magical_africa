@@ -97,6 +97,13 @@ justify-content: center;
   color: rgb(181, 161, 145);
 }
 
+@media screen and (min-width:1440px) {
+  .contact-page{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
 @media screen and (max-width:768px) {
   .contact-section{
     flex-direction: column;
@@ -128,3 +135,4 @@ justify-content: center;
     
   }
 }
+

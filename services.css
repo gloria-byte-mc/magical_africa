@@ -120,7 +120,8 @@ font-weight: 400;
   }
 
 .services{
-  
+  padding-left:8rem ;
+  padding-right:8rem ;
   gap: 8rem;
   padding-top: 4rem;
 }

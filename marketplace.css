@@ -209,7 +209,9 @@ ul li span{
 
   @media screen and (min-width:1440px) {
     .market-section{
-      height: 500px;
+      height: 400px;
+      padding: 0px 160px;
+      
     }
   }
 
