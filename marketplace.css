@@ -211,8 +211,14 @@ ul li span{
     .market-section{
       height: 400px;
       padding: 0px 160px;
-      
+      margin-top: 5rem;
+    
     }
+
+    .show-all2{
+      padding-top: 5rem;
+    }
+
   }
 
 @media screen and (max-width:1024px) {
