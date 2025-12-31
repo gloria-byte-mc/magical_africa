@@ -179,7 +179,7 @@ ul li span{
   height: 0.5px;
   width: 70px;
 }
-
+/*
 @media screen and (min-width:1440px) {
   .marketplace{
     
@@ -205,6 +205,7 @@ ul li span{
 
  
 }
+  */
 
 @media screen and (max-width:1024px) {
   .market-section{
