@@ -289,7 +289,11 @@
 
 @media screen and (max-width:480px) {
   .item2 h1{
-font-size: 1rem;
+font-size: 1.5rem;
+  }
+
+  #contact-us{
+    display: none;
   }
 }
 
