@@ -274,12 +274,22 @@
 
 @media screen and (max-width:768px) {
   .item2{
+    display: ;
+  }
+
+  .search{
     display: none;
   }
 
   .navbar{
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .item2 h1{
+font-size: 1rem;
   }
 }
 

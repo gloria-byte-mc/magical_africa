@@ -84,7 +84,7 @@ align-items: center;
 height: 100%;
 text-align: center;
 position: relative;
-opacity: 0;
+opacity: 1;
 }
 
 .impact1:hover .impact-text{
@@ -139,7 +139,7 @@ opacity: 0;
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.5);
-            opacity: 0;
+            opacity: 1;
             transition: opacity 0.5s ease;
             z-index: 1;
         }
