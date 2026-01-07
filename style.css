@@ -167,8 +167,9 @@
 .side-header{
   height: 5.5rem;
   display: flex;
+  
   align-items: center;
- 
+ justify-content: space-between;
 }
 .side-header button{
   display: flex;
@@ -178,6 +179,15 @@
   border: none;
   background-color: transparent;
 }
+
+/*for the searching om mobile */
+
+.search-btn{
+  opacity: 0;
+ }
+
+
+
 
 .side-header button i{
   font-size: 1rem;
@@ -273,8 +283,10 @@
 
 
 @media screen and (max-width:768px) {
-  .item2{
-    display: ;
+ 
+
+  .search-btn{
+    opacity: 1;
   }
 
   .search{
@@ -294,6 +306,14 @@ font-size: 1.5rem;
 
   #contact-us{
     display: none;
+  }
+
+  .menu span{
+    display: none;
+  }
+  .side-menu{
+    padding-left: 1rem;
+    
   }
 }
 

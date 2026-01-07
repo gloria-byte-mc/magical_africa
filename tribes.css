@@ -54,6 +54,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .tribe1 h1, .tribe2 h1, .tribe3 h1{
@@ -63,6 +65,21 @@
   position: relative;
   z-index: 2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  
+}
+
+.tribe1 p, .tribe2 p, .tribe3 p{
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: white;
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+ display: none;
+}
+
+.tribe1:hover p, .tribe2:hover p, .tribe3:hover p{
+display: block;
 }
 
    .tribe1::before, .tribe2::before, .tribe3::before {

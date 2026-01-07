@@ -127,17 +127,20 @@ updateService();
           {
             image: 'images/maasai-bracelets.jpg',
             title: 'Maasai bracelets',
-            description: 'Maasai beaded bracelets showcasing tradition and artistry.'
+            description: 'Maasai beaded bracelets showcasing tradition and artistry.',
+            Price: '$15'
           },
           {
             image: 'images/beaded-jewelery.jpg',
             title: 'Beaded jewelery',
-            description: 'Handcrafted stone jewelry with natural elegance.'
+            description: 'Handcrafted stone jewelry with natural elegance.',
+            Price: '$75'
           },
           {
             image: 'images/maasai-necklaces.jpg',
             title: 'Maasai necklaces',
-            description: 'Traditional Maasai beaded necklaces with vibrant colors.'
+            description: 'Traditional Maasai beaded necklaces with vibrant colors.',
+            Price: '$65'
           }
         ]
       },
@@ -147,17 +150,20 @@ updateService();
           {
             image: 'images/nigeria-wear.jpg',
             title: 'Ankara Gown',
-            description: 'Made from Ankara Fabric, worn across many Nigerian cultures.'
+            description: 'Made from Ankara Fabric, worn across many Nigerian cultures.',
+            Price: '$200'
           },
           {
             image: 'images/maasai-wear.jpg',
             title: 'Maasai Leso',
-            description: 'Worn by Maasai men and women across Kenya and Tanzania.'
+            description: 'Worn by Maasai men and women across Kenya and Tanzania.',
+            Price: '$120'
           },
           {
             image: 'images/kitenge.jpg',
             title: 'Kitenge',
-            description: 'Made from brightly patterned cotton fabric for both men and women.'
+            description: 'Made from brightly patterned cotton fabric for both men and women.',
+            Price: '$100'
           }
         ]
       },
@@ -167,17 +173,20 @@ updateService();
           {
             image: 'images/hammer.jpg',
             title: 'Carpentry Tools',
-            description: 'Artisan carpentry tools for perfect craftsmanship.'
+            description: 'Artisan carpentry tools for perfect craftsmanship.',
+            Price: '$300'
           },
           {
             image: 'images/shoka.png',
             title: 'Farming Tools',
-            description: 'Traditional farming implements still in use today.'
+            description: 'Traditional farming implements still in use today.',
+            Price: '$150'
           },
           {
             image: 'images/spear.jpg',
             title: 'Traditional Spears',
-            description: 'Handcrafted spears used by warriors throughout history.'
+            description: 'Handcrafted spears used by warriors throughout history.',
+            Price: '$80'
           }
         ]
       },
@@ -187,17 +196,20 @@ updateService();
           {
             image: 'images/drums.jpg',
             title: 'Drums',
-            description: 'Traditional African drums for ceremonies and celebrations.'
+            description: 'Traditional African drums for ceremonies and celebrations.',
+            Price: '$400'
           },
           {
             image: 'images/string-instrument.jpg',
             title: 'String Instruments',
-            description: 'Handmade string instruments with unique sounds.'
+            description: 'Handmade string instruments with unique sounds.',
+            Price: '$200'
           },
           {
             image: 'images/wind-instrument.jpg',
             title: 'Wind Instruments',
-            description: 'Traditional flutes and horns made from natural materials.'
+            description: 'Traditional flutes and horns made from natural materials.',
+            Price: '$150'
           }
         ]
       }
@@ -219,9 +231,11 @@ updateService();
         
         const title = document.getElementById(`title${index + 1}`);
         const desc = document.getElementById(`desc${index + 1}`);
-        
-        title.textContent = sectionData.title;
+        const price = document.getElementById
+        (`span${index + 1}`);
+        title.textContent =  sectionData.title;
         desc.textContent = sectionData.description;
+        price.textContent = 'Price:' + " " + sectionData.Price;
       });
     }
 
@@ -309,3 +323,18 @@ const Logo = document.getElementById("logo-header");
 Logo.addEventListener("click", ()=>{
   window.location.href = "index.html"
 });
+
+
+
+ const carousel = document.getElementById('languageCarousel');
+    const spans = carousel.querySelectorAll('span');
+
+    spans.forEach(span => {
+      span.addEventListener('mouseenter', () => {
+        carousel.classList.add('paused');
+      });
+
+      span.addEventListener('mouseleave', () => {
+        carousel.classList.remove('paused');
+      });
+    });

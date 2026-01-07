@@ -6,6 +6,7 @@
   <title>Magical Africa</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/cc4feaa5b5.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="images/favicon.png" type="image/png">
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="services.css">
@@ -17,6 +18,7 @@
   <link rel="stylesheet" href="faq.css">
   <link rel="stylesheet" href="social-impact.css">
   <link rel="stylesheet" href="tribes.css">
+  <link rel="stylesheet" href="partners.css">
 </head>
 <body>
 
@@ -32,6 +34,14 @@
        <button class="close-btn">
         <i class="fa-solid fa-x"></i>
         <span>Close</span>
+
+       </button>
+
+       <button class="search-btn">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <span>Search</span>
 
        </button>
       </div>
@@ -76,7 +86,7 @@
 
 
       <div class="item3">
-       <a href="#" id="contact-us">Contact Us</a>
+       <a href="#" id="contact-us">Account</a>
        <a href="#">
         <i class="fa-regular fa-user"></i>
        </a>
@@ -159,17 +169,46 @@
       different African communities and connect with the continent
       through language.
     </p>
+ 
 
-    <div class="languages">
-      <span data-tooltip="A common greeting is “Habari?”, meaning “How are you?”
+
+<!--
+<div class="languages">
+  <span data-tooltip="A common greeting is “Habari?”, meaning “How are you?”
 ">Swahili</span>
       <span data-tooltip="A common greeting is “Sawubona”, meaning “I see you.”
 ">Zulu</span>
       <span data-tooltip="“Báwo ni?” is a common Yoruba greeting meaning “How are you?”
 ">Yoruba</span>
-     
+
+ </div>
+
+ -->
+
+ <div class="carousel-container">
+      <div class="languages" id="languageCarousel">
+        <span data-tooltip="A common greeting is 'Habari?', meaning 'How are you?'">Swahili</span>
+        <span data-tooltip="A common greeting is 'Sawubona', meaning 'I see you.'">Zulu</span>
+        <span data-tooltip="'Báwo ni?' is a common Yoruba greeting meaning 'How are you?'">Yoruba</span>
+        <span data-tooltip="A common greeting is 'Jambo', meaning 'Hello'">Kikuyu</span>
+        <span data-tooltip="'Akkam?' means 'How are you?' in Hausa.">Hausa</span>
+        <span data-tooltip="'Mhoro' is a common Shona greeting meaning 'Hello.'">Shona</span>
+        <span data-tooltip="A common greeting is 'Moro', meaning 'Hello'">Sukuma</span>
+        <span data-tooltip="'Molo' is a common Xhosa greeting meaning 'Hello.'">Xhosa</span>
+        <span data-tooltip="A common greeting is 'Sanu', meaning 'Hello'">Maasai</span>
+       <span data-tooltip="A common greeting is 'Kedu?', meaning 'How are you?'">Igbo</span>
+       <span data-tooltip="A common greeting is 'Mbote', meaning 'Hello'">Lingala</span>
+        <span data-tooltip="A common greeting is 'Avuxeni', meaning 'Good morning'">Tsonga</span>
+        <span data-tooltip="A common greeting is 'Dumela', meaning 'Hello'">Setswana</span>
+        <span data-tooltip="A common greeting is 'Moni', meaning 'Hello'">Chichewa</span>
+      
+        
+       
+
+      </div>
     </div>
-  </div>
+
+ </div>
 
 
   <div class="about-section">
@@ -209,18 +248,21 @@
         <div class="description">
           <h3 id="title1"></h3>
           <p id="desc1"></p>
+          <span id="span1">Price: $25</span>
         </div>
       </div>
       <div class="section section2">
         <div class="description">
           <h3 id="title2"></h3>
           <p id="desc2"></p>
+          <span id="span2">Price: $25</span>
         </div>
       </div>
       <div class="section section3">
         <div class="description">
           <h3 id="title3"></h3>
           <p id="desc3"></p>
+          <span id="span3">Price: $25</span>
         </div>
       </div>
     </div>
@@ -248,14 +290,19 @@
 
       <div class="tribe1">
         <h1>Oromo</h1>
+        <p>Rooted in Ethiopia, the Oromo people carry a proud legacy of tradition, unity, and cultural identity. They are the country’s largest ethnic group, making up about one-third of the population with around 40 million people.</p>
       </div>
 
       <div class="tribe2">
         <h1>Zulu</h1>
+        <p>From South Africa, the Zulu people carry a powerful legacy of tradition, resilience, and identity, representing over 11 million people.
+        </p>
       </div>
 
       <div class="tribe3">
         <h1>Igbo</h1>
+        <p>Rooted in Nigeria, the Igbo people are one of the country’s largest ethnic groups, numbering over 30 million, known for their rich traditions, entrepreneurship, and strong communal values.</p>
+
       </div>
 
     </div>
@@ -318,6 +365,42 @@ Creates jobs for local creators
       </div>
 
     </div>
+
+  </div>
+
+
+  <div class="partners">
+
+
+    <div class="partners-text2">
+
+    <h1>Our Partners</h1>
+
+    <p>Together with our partners, we support African creativity, traditions, and sustainable livelihoods.</p>
+
+    </div>
+
+     <div class="partners-boxes">
+
+      <div class="box1">
+       <img src="images/aws.webp" alt="">
+      </div>
+
+      <div class="box2">
+         <img src="images/kuLogo.webp" alt="">
+      </div>
+
+    </div>
+
+    <div class="partners-text">
+
+    <h1>Our Partners</h1>
+
+    <p>Together with our partners, we support African creativity, traditions, and sustainable livelihoods.</p>
+
+    </div>
+
+   
 
   </div>
 
@@ -420,6 +503,28 @@ Creates jobs for local creators
   
   </div>
 
+<!--
+   <div class="partners">
+
+    <h1>Our Partners</h1>
+     <p>Who we work with</p>
+
+     <div class="partners-section">
+
+      <div class="partner1">
+
+      </div>
+
+      <div class="partner2">
+        
+      </div>
+      
+     </div>
+
+  </div>
+
+  -->
+
 
   <div class="contact-page">
 
@@ -455,6 +560,9 @@ Creates jobs for local creators
     </div>
 
   </div>
+
+
+ 
 
 
   <div class="footer">
