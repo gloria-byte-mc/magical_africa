@@ -49,6 +49,21 @@
   padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+
+}
+
+  .sign-in-form::-webkit-scrollbar {
+    width: 3px;
+  }
+
+   .sign-in-form::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .sign-in-form::-webkit-scrollbar-thumb {
+  background: rgb(181, 161, 145);
+  
 }
 
 .close-mark{
@@ -282,6 +297,7 @@ hr{
   background: rgb(181, 161, 145);
   
 }
+  
    
 }
 
@@ -295,6 +311,11 @@ hr{
     padding-top: 0rem;
   }
 }
+
+ @media screen and (max-height:800px) {
+  
+ }
+
 
 
 
