@@ -387,7 +387,7 @@ font-size: 1.5rem;
   }
   .side-menu{
     padding-left: 1rem;
-    
+   
   }
 
   .hero-text h1{
@@ -399,6 +399,13 @@ font-size: 1.5rem;
   }
   .hero-box p{
     font-size: 0.875rem;
+  }
+
+}
+
+@media screen and (max-width:390px) {
+    .search-btn{
+    padding-right: 3rem;
   }
 }
 
