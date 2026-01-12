@@ -26,6 +26,13 @@ background-size: cover;
 background-repeat: no-repeat;
 }
 
+.side1 h1{
+color: white;
+padding-top: 2rem;
+text-align: center;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 .side2{
 width: 100%;
 max-width: 600px;
