@@ -338,3 +338,28 @@ Logo.addEventListener("click", ()=>{
         carousel.classList.remove('paused');
       });
     });
+
+
+const signInBtn = document.getElementById("contact-us");
+const authOverlay = document.getElementById("authOverlay");
+
+// Open the sign-in overlay
+signInBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  authOverlay.classList.add("active");
+
+  document.body.style.overflow = "hidden";
+});
+
+
+authOverlay.addEventListener("click", (e) => {
+ 
+  if (e.target === authOverlay) {
+    authOverlay.classList.remove("active");
+  }
+  document.body.style.overflow = "auto";
+});
+
+
+
+  

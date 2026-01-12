@@ -81,7 +81,7 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
-  
+  align-items: center;
 }
 .item3 a{
   text-decoration: none;
@@ -279,6 +279,20 @@
 
 .hero-content {
    z-index: 2; 
+}
+
+.Account-icon{
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: none;
+  color: white;
+  background-color: #4285f4;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 

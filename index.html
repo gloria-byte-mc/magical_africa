@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="social-impact.css">
   <link rel="stylesheet" href="tribes.css">
   <link rel="stylesheet" href="partners.css">
+  <link rel="stylesheet" href="sign-up.css">
+  <link rel="stylesheet" href="sign-up2.css">
 </head>
 <body>
 
@@ -88,13 +90,10 @@
       <div class="item3">
        <a href="#" id="contact-us">Sign In</a>
        <a href="#">
-        <i class="fa-regular fa-user"></i>
-       </a>
-
-       
-        
-
-      </div>
+        <i class="fa-regular fa-user" id="user-icon"></i>
+        </a>
+        <span class="Account-icon"></span>
+       </div>
 
     </div>
 
@@ -617,7 +616,182 @@ Creates jobs for local creators
 
   </div>
 
+  <!-- SIGN UP OVERLAY -->
+<div class="auth-overlay" id="authOverlay">
+  <!--
+  <div class="auth-modal">
+    <button class="close-auth">&times;</button>
+
+    <h2>Sign In</h2>
+
+    <form>
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Sign In</button>
+    </form>
+  </div>
+  -->
+
+ 
+
+
+  <div class="sign-in-form">
+
+     <div class="close-mark">
+      <i class="fa-solid fa-x" id="close-icon"></i>
+    </div>
+    <div class="form1">
+     
+   <h1>Sign In</h1>
+
+    <form action="#" method="post">
+      <div class="email">
+
+        <label for="email">Email</label>
+        <input type="text" name="Email" id="email" placeholder="email@example.com" autocomplete="nope">
+        <p class="required2">Required</p>
+      </div>
+
+      <div class="password">
+
+        <label for="password">Password</label>
+        <input type="password" name="Password" id="Password"  placeholder="********" autocomplete="new-password">
+        <i class="fa-regular fa-eye-slash" id="toggle-password"></i>
+
+        <p class="required1">Required</p>
+        
+        <a href="#">Forgot Password?</a>
+        
+
+      </div>
+     
+    </form>
+
+     <button class="sign-in">Sign In</button>
+
+     <!--
+     <p class="paragraph">This site is protected by reCAPTCHA and the Google <span>Privacy Policy</span> and <span>Terms of Service</span> apply
+    </p>
+    -->
+
+    <button class="sign-with-google">
+      <img src="images/google-logo.png" alt="google">
+      Continue with Google
+    </button>
+
+  </div>
+
+  <hr>
+<div class="sign-up-link">
+
+  <h1 class="head2">Or Become a Member</h1>
+  <p class="join">Join <span>Magical Africa</span> and discover Africa’s culture, heritage, stories, and traditions.</p>
+
+  <button class="sign-up-btn">Sign Up</button>
+</div>
+  
+
+</div>
+
+
+
+<div class="sign-up-form">
+
+  <div class="side1">
+
+  </div>
+
+  <div class="side2">
+
+    <h1>Let's Get Started   
+
+      <i class="fa-solid fa-x" id="back"></i>
+    </h1>
+
+    <form action="#" method="post">
+
+  <div class="tribe-div">
+
+    <label for="tribes"> <span class="color">*</span> Tribes</label>
+    <select name="tribes-select" id="tribes-s">
+      <option value="Kikuyu">Kikuyu</option>
+      <option value="Maasai">Maasai</option>
+      <option value="Asanti">Asanti</option>
+      <option value="Haya">Haya</option>
+      <option value="Oromo">Oromo</option>
+      <option value="Igbo">Igbo</option>
+      <option value="Embu">Embu</option>
+
+      </select>
+
+  </div>
+
+  <div class="names-div">
+
+    <div class="firstname">
+
+      <label for="firstname"> <span class="color">* </span>First Name</label>
+       <input type="text" placeholder="Enter your first name " class="firstnameInput">
+       <p class="required3">required</p>
+    </div>
+
+    <div class="secondname">
+   <label for="firstname"> <span class="color">* </span>Second Name</label>
+       <input type="text" placeholder="Enter your last name" class="secondnameInput">
+       <p class="required4">required</p>
+    </div>
+    
+
+  </div>
+
+
+  <div class="email-div">
+
+    <label for="email2"><span class="color">*</span> Email</label>
+    <input type="text" name="email" id="" placeholder="Enter your email" class="emailInput" autocomplete="nope">
+   <p class="required5">required</p>
+  </div>
+
+  
+  <div class="where-div">
+
+    <div class="password2">
+
+      <label for="password"> <span class="color">* </span>Password</label>
+       <input type="password" placeholder="******** " class="password3" autocomplete="new-password">
+        <i class="fa-regular fa-eye-slash" id="toggle-password2" ></i>
+
+       <p class="required6">required</p>
+    </div>
+
+    <div class="country2">
+   <label for="country"> <span class="color">* </span>Country</label>
+       <input type="text" placeholder="Enter your country" class="countryInpt">
+       <p class="required7">required</p>
+    </div>
+    
+
+  </div>
+
+
+  <button class="create-account">Create Account</button>
+
+    </form>
+
+  </div>
+
+</div>
+
+
+</div>
+
+
   <script type="module" src="main.js"></script>
+  <script type="module" src="main2.js"></script>
+  <script type="module" src="main3.js"></script>
+  <script type="module" src="main4.js"></script>
+  <script type="module" src="main5.js"></script>
+  <script type="module" src="main6.js"></script>
   
 </body>
 </html>
