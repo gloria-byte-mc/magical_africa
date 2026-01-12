@@ -1,0 +1,218 @@
+
+/* This is for the dropdown in the navbar */
+
+/* Account Icon - positioned in item3 */
+.Account-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: white;
+  background-color: #4285f4;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.Account-icon:hover {
+  transform: scale(1.05);
+}
+
+
+.navbar.scrolled .Account-icon,
+.navbar:hover .Account-icon {
+  color: white;
+  background-color: #4285f4;
+}
+
+
+.item3 {
+  position: relative;
+}
+
+.account-dropdown {
+  position: absolute;
+  top: calc(100% + 15px);
+  right: 0;
+  width: 360px;
+  background-color: white;
+ 
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 8px 24px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 1002;
+  padding: 1rem 0;
+}
+
+
+.Account-icon:hover + .account-dropdown,
+.account-dropdown:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+.currently-in {
+  padding: 0 1rem 0.5rem 1rem;
+  font-size: 0.75rem;
+  color: #767676;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Account Item (Active Account) */
+.account-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  gap: 10px;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.account-item.active {
+  background-color: #efefef;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+
+}
+
+.account-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #4285f4;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.account-details {
+  flex: 1;
+  overflow: hidden;
+}
+
+.account-details h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111;
+  margin: 0 0 4px 0;
+  line-height: 1.2;
+}
+
+.account-type {
+  font-size: 0.875rem;
+  color: #111;
+  margin: 0 0 2px 0;
+  font-weight: 400;
+}
+
+.account-email {
+  font-size: 0.875rem;
+  color: #767676;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.account-item i {
+  color: #111;
+  font-size: 1rem;
+}
+
+/* Dropdown Options */
+.dropdown-option {
+  padding: 0.875rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-option:hover {
+  background-color: #efefef;
+}
+
+.dropdown-option span {
+  font-size: 1rem;
+  color: #111;
+  font-weight: 400;
+}
+
+/* Section Title */
+.dropdown-section-title {
+  padding: 1rem 1rem 0.5rem 1rem;
+  font-size: 0.75rem;
+  color: #767676;
+  font-weight: 500;
+}
+
+/* Logout Option */
+.logout-option {
+  margin-top: 0.5rem;
+}
+
+/* Arrow pointing to account icon 
+.account-dropdown::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+  filter: drop-shadow(0 -2px 2px rgba(0, 0, 0, 0.05));
+}
+*/
+
+
+@media screen and (max-width: 768px) {
+  .account-dropdown {
+    width: 320px;
+    right: -10px;
+  }
+  
+  .account-dropdown::before {
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .account-dropdown {
+    width: calc(100vw - 2rem);
+    right: calc(-50vw + 35px);
+    right: 2px;
+  }
+  
+  .account-dropdown::before {
+    right: calc(50vw - 35px);
+  }
+  
+  .account-avatar {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  
+  .account-details h4 {
+    font-size: 0.9rem;
+  }
+  
+  .account-type,
+  .account-email {
+    font-size: 0.8rem;
+  }
+
+}

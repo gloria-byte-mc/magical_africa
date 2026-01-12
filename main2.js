@@ -143,7 +143,7 @@ Back.addEventListener('click', ()=>{
   SignInForm.style.display = 'flex'
 });
 
-//For closing the sin-in form
+//For closing the sign-in form
 const closeIcon = document.getElementById('close-icon');
 
 
@@ -153,6 +153,7 @@ closeIcon.addEventListener('click', (e) => {
 });
 
 
+/*
 const Icon = document.querySelector('.Account-icon');
 const authOverlay = document.getElementById("authOverlay");
 
@@ -170,3 +171,5 @@ authOverlay.addEventListener("click", (e) => {
   }
   document.body.style.overflow = "auto";
 });
+*/
+

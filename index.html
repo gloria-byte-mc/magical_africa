@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="partners.css">
   <link rel="stylesheet" href="sign-up.css">
   <link rel="stylesheet" href="sign-up2.css">
+  <link rel="stylesheet" href="hero-stuff.css">
 </head>
 <body>
 
@@ -87,16 +88,47 @@
       </div>
 
 
-      <div class="item3">
-       <a href="#" id="contact-us">Sign In</a>
-       <a href="#">
-        <i class="fa-regular fa-user" id="user-icon"></i>
-        </a>
-        <span class="Account-icon"></span>
-       </div>
+
+<!-- Keep your existing item3 structure - just add the dropdown -->
+<div class="item3">
+  <a href="#" id="contact-us">Sign In</a>
+  <a href="#">
+    <i class="fa-regular fa-user" id="user-icon"></i>
+  </a>
+  <span class="Account-icon">G</span>
+  
+  <!-- Dropdown Menu - Separate from the icon -->
+  <div class="account-dropdown">
+    <p class="currently-in">Currently in</p>
+    
+    <div class="account-item active">
+      <div class="account-avatar">G</div>
+      <div class="account-details">
+        <h4>Gloria Nyatichi...</h4>
+        <p class="account-type">Personal</p>
+        <p class="account-email">gloriamachoka1@gmail.c...</p>
+      </div>
+      <i class="fa-solid fa-check"></i>
+    </div>
+    
+   
+    
+    <div class="dropdown-section-title">Your accounts</div>
+    
+    <div class="dropdown-option">
+      <span>Add Magical Africa account</span>
+    </div>
+    
+    <div class="dropdown-option logout-option">
+      <span>Log out</span>
+    </div>
+  </div>
+</div>
+       
 
     </div>
 
+    <!--
     <div class="hero-content">
       <h1>The Real African Story</h1>
 
@@ -108,6 +140,40 @@
       </div>
 
     </div>
+-->
+
+<div class="hero-stuff">
+  <div class="hero-text">
+  <h1>Welcome To Magical Africa</h1>
+  <p>The Real African Story</p>
+  </div>
+
+
+  <div class="hero-boxes">
+
+    <div class="hero-box">
+    <i class="fa-solid fa-comments"></i>
+     <p>Learn Language</p>
+      
+    </div>
+
+    <div class="hero-box">
+
+      <i class="fa-solid fa-mask"></i>
+      <p>Explore Culture</p>
+
+    </div>
+
+    <div class="hero-box">
+
+      <i class="fa-solid fa-scroll"></i>
+      <p>Visit Antiques
+    </div>
+
+  </div>
+
+
+</div>
 
   </div>
 
@@ -700,6 +766,45 @@ Creates jobs for local creators
   <div class="side1">
     <h1>Your Journey Starts Here</h1>
 
+    <div class="cards">
+
+      <div class="card1">
+
+         <i class="fa-solid fa-globe-africa"></i>
+
+        <div >
+        <h2>Explore Authentic Africa</h2>
+        <p>Discover rich cultures, traditions, and stories from across the continent all in one place.</p>
+        </div>
+
+      </div>
+
+      <div class="card2">
+         <i class="fa-solid fa-people-group"></i>
+ 
+        <div >
+        <h2>Connect With Heritage</h2>
+        <p>Experience Africa through its people, tribes, and timeless traditions, curated with care.</p>
+       </div>
+
+      </div>
+
+     <div class="card3">
+
+       <i class="fa-solid fa-republican"></i>
+
+
+       <div>
+
+      
+      <h2>Travel Beyond the Ordinary</h2>
+        <p>Unlock unique destinations and cultural experiences that go beyond the usual tourist path.</p>
+       </div>
+
+     </div>
+
+    </div>
+
   </div>
 
   <div class="side2">
@@ -793,6 +898,8 @@ Creates jobs for local creators
   <script type="module" src="main4.js"></script>
   <script type="module" src="main5.js"></script>
   <script type="module" src="main6.js"></script>
+  <script type="module" src="carousel.js"></script>
+  <script type="module" src="hero-coursel.js"></script>
   
 </body>
 </html>
