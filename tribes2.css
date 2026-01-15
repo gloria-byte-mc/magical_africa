@@ -243,40 +243,40 @@ flex: 1;
 
     /* Different background images for each community */
     .community-image.zulu {
-      background-image: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800');
+      background-image: url('images/zulu.jpg');
     }
     .community-image.yoruba {
-      background-image: url('https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=800');
+      background-image: url('images/African2.jpg');
     }
     .community-image.kikuyu {
-      background-image: url('https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?w=800');
+      background-image: url('images/African-storytelling.jpg');
     }
     .community-image.maasai {
-      background-image: url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800');
+      background-image: url('images/drums.jpg');
     }
     .community-image.ashanti {
-      background-image: url('https://images.unsplash.com/photo-1580746738099-1cb17a82bbc3?w=800');
+      background-image: url('images/Oromo.jpg');
     }
     .community-image.hausa {
-      background-image: url('https://images.unsplash.com/photo-1504197832061-98356e3dcdcf?w=800');
+      background-image: url('images/kitenge.jpg');
     }
     .community-image.igbo {
-      background-image: url('https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=800');
+      background-image: url('images/kitenge2.jpg');
     }
     .community-image.amhara {
-      background-image: url('https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=800');
+      background-image: url('images/learn-language.jpg');
     }
     .community-image.berber {
-      background-image: url('https://images.unsplash.com/photo-1539768942893-daf53e448371?w=800');
+      background-image: url('images/Learn-Language2.jpg');
     }
     .community-image.swahili {
-      background-image: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800');
+      background-image: url('images/maasai-wear.jpg');
     }
     .community-image.wolof {
-      background-image: url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800');
+      background-image: url('images/wind-instrument.jpg');
     }
     .community-image.fulani {
-      background-image: url('https://images.unsplash.com/photo-1580746738099-1cb17a82bbc3?w=800');
+      background-image: url('images/Igbo.jpg');
     }
 
     .community-content {
@@ -350,13 +350,13 @@ flex: 1;
     }
 
     .dot.active {
-      background-color: #EA580C;
+      background-color: rgb(181, 161, 145);
       width: 30px;
       border-radius: 5px;
     }
 
     .dot:hover {
-      background-color: #EA580C;
+      background-color: rgb(181, 161, 145);
     }
 
     /* Responsive Styles */
