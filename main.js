@@ -362,4 +362,12 @@ authOverlay.addEventListener("click", (e) => {
 
 
 
-  
+
+
+  const tribePage = document.getElementById('tribe-page');
+
+  tribePage.addEventListener('click', (e)=>{
+  e.preventDefault();
+
+  window.location.href = "tribes.html"
+  });

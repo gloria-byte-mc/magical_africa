@@ -3,86 +3,656 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Magical Africa – Languages</title>
-
+  <title>Maasai Community - Magical.Africa</title>
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #f4f4f4;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    /* Languages Section */
-    .languages-section {
-      padding: 80px 20px;
-      background: linear-gradient(to right, #f9f5ef, #fff);
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 50%, #fecaca 100%);
+      min-height: 100vh;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 500px;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), 
+                  url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
       text-align: center;
     }
 
-    .languages-section h2 {
-      font-size: 2.3rem;
-      color: #1f6f43;
+    .hero-content h1 {
+      font-size: 4rem;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .hero-content p {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .verified-badge-hero {
+      display: inline-block;
+      background: #10b981;
+      padding: 8px 20px;
+      border-radius: 25px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    /* Quick Info Bar */
+    .quick-info {
+      background: white;
+      box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin: -50px auto 0;
+      max-width: 1200px;
+      border-radius: 15px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+
+    .info-item {
+      padding: 15px;
+    }
+
+    .info-icon {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .info-label {
+      font-size: 0.85rem;
+      color: #6b7280;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+    }
+
+    .info-value {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #1f2937;
+    }
+
+    /* Main Content */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    /* Tab Navigation */
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 40px;
+      border-bottom: 3px solid #fed7aa;
+      overflow-x: auto;
+    }
+
+    .tab {
+      padding: 15px 30px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #9a3412;
+      transition: all 0.3s ease;
+      border-bottom: 3px solid transparent;
+      margin-bottom: -3px;
+      white-space: nowrap;
+    }
+
+    .tab.active {
+      color: #ea580c;
+      border-bottom-color: #ea580c;
+    }
+
+    .tab:hover {
+      color: #ea580c;
+    }
+
+    /* Tab Content */
+    .tab-content {
+      display: none;
+      animation: fadeIn 0.5s;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Content Sections */
+    .content-section {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: #ea580c;
+      margin-bottom: 20px;
+      border-left: 5px solid #ea580c;
+      padding-left: 15px;
+    }
+
+    .section-text {
+      color: #4b5563;
+      line-height: 1.8;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    /* Image Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery-item {
+      position: relative;
+      height: 200px;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* List Styles */
+    .cultural-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .cultural-list li {
+      padding: 15px 20px;
+      margin-bottom: 10px;
+      background: #fef3c7;
+      border-left: 4px solid #ea580c;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .cultural-list li:hover {
+      background: #fed7aa;
+      transform: translateX(5px);
+    }
+
+    .cultural-list strong {
+      color: #ea580c;
+      font-size: 1.1rem;
+    }
+
+    /* Audio Player */
+    .audio-section {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 25px;
+      background: linear-gradient(135deg, #ea580c 0%, #dc2626 100%);
+      border-radius: 15px;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .audio-icon {
+      font-size: 3rem;
+    }
+
+    .audio-info h3 {
+      margin-bottom: 10px;
+    }
+
+    .play-btn {
+      padding: 12px 30px;
+      background: white;
+      color: #ea580c;
+      border: none;
+      border-radius: 25px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .play-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+    }
+
+    /* Leaders Section */
+    .leaders-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .leader-card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .leader-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .leader-image {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .leader-info {
+      padding: 25px;
+    }
+
+    .leader-name {
+      font-size: 1.5rem;
+      color: #1f2937;
+      margin-bottom: 5px;
+    }
+
+    .leader-role {
+      color: #ea580c;
+      font-weight: 600;
       margin-bottom: 15px;
     }
 
-    .languages-section p {
-      max-width: 650px;
-      margin: 0 auto 40px;
-      font-size: 1rem;
-      color: #555;
+    .leader-bio {
+      color: #6b7280;
       line-height: 1.6;
     }
 
-    .languages {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
+    /* Contribute Section */
+    .contribute-box {
+      background: linear-gradient(135deg, #ea580c 0%, #dc2626 100%);
+      color: white;
+      padding: 50px;
+      border-radius: 20px;
+      text-align: center;
+      margin-top: 50px;
     }
 
-    .languages span {
-      padding: 12px 22px;
-      background-color: #1f6f43;
-      color: #fff;
+    .contribute-box h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .contribute-box p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      opacity: 0.95;
+    }
+
+    .contribute-btn {
+      padding: 15px 40px;
+      background: white;
+      color: #ea580c;
+      border: none;
       border-radius: 30px;
-      font-size: 0.95rem;
+      font-size: 1.1rem;
+      font-weight: 700;
       cursor: pointer;
-      transition: transform 0.3s ease, background-color 0.3s ease;
+      transition: all 0.3s ease;
     }
 
-    .languages span:hover {
-      transform: translateY(-5px);
-      background-color: #145a34;
+    .contribute-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(255,255,255,0.3);
     }
 
-    @media (max-width: 600px) {
-      .languages-section h2 {
-        font-size: 1.8rem;
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+
+      .tabs {
+        flex-wrap: nowrap;
+      }
+
+      .content-section {
+        padding: 25px;
       }
     }
   </style>
 </head>
 <body>
-
-  <section class="languages-section">
-    <h2>Get to Learn Some of Our Languages</h2>
-    <p>
-      Africa is home to thousands of languages, each carrying history,
-      identity, and culture. Explore common greetings and words from
-      different African communities and connect with the continent
-      through language.
-    </p>
-
-    <div class="languages">
-      <span>Swahili</span>
-      <span>Zulu</span>
-      <span>Yoruba</span>
-      <span>Amharic</span>
-      <span>Hausa</span>
-      <span>Igbo</span>
-      <span>Shona</span>
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Maasai</h1>
+      <p>The Warriors of East Africa</p>
+      <div class="verified-badge-hero">✓ Verified Community</div>
     </div>
-  </section>
+  </div>
 
+  <!-- Quick Info Bar -->
+  <div class="quick-info">
+    <div class="info-grid">
+      <div class="info-item">
+        <div class="info-icon">📍</div>
+        <div class="info-label">Location</div>
+        <div class="info-value">Kenya, Tanzania</div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">👥</div>
+        <div class="info-label">Population</div>
+        <div class="info-value">1.5 Million+</div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">📖</div>
+        <div class="info-label">Language</div>
+        <div class="info-value">Maa (Nilotic)</div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">🌍</div>
+        <div class="info-label">Region</div>
+        <div class="info-value">East Africa</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active" onclick="openTab('overview')">Overview</button>
+      <button class="tab" onclick="openTab('language')">Language</button>
+      <button class="tab" onclick="openTab('culture')">Culture & Traditions</button>
+      <button class="tab" onclick="openTab('leaders')">Leaders</button>
+      <button class="tab" onclick="openTab('nature')">Nature & Wildlife</button>
+      <button class="tab" onclick="openTab('gallery')">Gallery</button>
+    </div>
+
+    <!-- Overview Tab -->
+    <div id="overview" class="tab-content active">
+      <div class="content-section">
+        <h2 class="section-title">History & Migration</h2>
+        <p class="section-text">
+          The Maasai are a Nilotic ethnic group inhabiting northern, central and southern Kenya and northern Tanzania. 
+          They are among the best known local populations internationally due to their residence near many game parks 
+          of the African Great Lakes and their distinctive customs and dress.
+        </p>
+        <p class="section-text">
+          The Maasai speak the Maa language, a member of the Nilotic language family related to Dinka and Nuer. 
+          They are known for their unique culture, customs, and dress, as well as their reputation as fierce warriors 
+          and cattle herders. The Maasai have maintained much of their traditional lifestyle despite pressure from 
+          modern development.
+        </p>
+      </div>
+
+      <div class="content-section">
+        <h2 class="section-title">Identity & Way of Life</h2>
+        <p class="section-text">
+          The Maasai are semi-nomadic pastoralists who have traditionally relied on cattle, sheep, and goats for their livelihood. 
+          Cattle hold special significance in Maasai culture, representing wealth, status, and sustenance. The Maasai measure 
+          a man's wealth by the number of cattle and children he has.
+        </p>
+        <p class="section-text">
+          Young Maasai warriors, known as "morans," undergo rigorous training and initiation ceremonies. Their distinctive 
+          dress includes the iconic red shuka (cloth), elaborate beaded jewelry, and ochre body paint. The jumping dance, 
+          or "adumu," is one of their most recognizable cultural practices.
+        </p>
+      </div>
+    </div>
+
+    <!-- Language Tab -->
+    <div id="language" class="tab-content">
+      <div class="content-section">
+        <h2 class="section-title">The Maa Language</h2>
+        
+        <div class="audio-section">
+          <div class="audio-icon">🔊</div>
+          <div class="audio-info" style="flex: 1;">
+            <h3>Listen to Traditional Greetings</h3>
+            <p>Learn authentic Maa pronunciation from native speakers</p>
+          </div>
+          <button class="play-btn">▶ Play Audio</button>
+        </div>
+
+        <h3 style="margin: 30px 0 15px; color: #ea580c; font-size: 1.5rem;">Common Phrases</h3>
+        <ul class="cultural-list">
+          <li><strong>Sopa</strong> - Hello (to one person)</li>
+          <li><strong>Serian</strong> - Hello (to many people)</li>
+          <li><strong>Ashe oleng</strong> - Thank you very much</li>
+          <li><strong>Karibu</strong> - Welcome</li>
+          <li><strong>Iko</strong> - Yes</li>
+          <li><strong>Mme</strong> - No</li>
+          <li><strong>Takwenya</strong> - Goodbye</li>
+        </ul>
+
+        <h3 style="margin: 30px 0 15px; color: #ea580c; font-size: 1.5rem;">Proverbs & Wisdom</h3>
+        <ul class="cultural-list">
+          <li><strong>"Meishoo iyiook enkerai o'nkera enkitoria"</strong> - A child does not grow up only in a single home (It takes a village to raise a child)</li>
+          <li><strong>"Enkitoria enkerai"</strong> - Respect begets respect</li>
+          <li><strong>"Meidim enkai nalepo"</strong> - God does not sleep</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Culture & Traditions Tab -->
+    <div id="culture" class="tab-content">
+      <div class="content-section">
+        <h2 class="section-title">Traditional Clothing & Adornment</h2>
+        <p class="section-text">
+          The Maasai are renowned for their distinctive red clothing called "shuka." Red is the most important color, 
+          symbolizing bravery, unity, and blood. Both men and women wear elaborate beaded jewelry, with different colors 
+          and patterns signifying age, marital status, and social position.
+        </p>
+        
+        <h3 style="margin: 30px 0 15px; color: #ea580c; font-size: 1.5rem;">Beadwork Meanings</h3>
+        <ul class="cultural-list">
+          <li><strong>Red</strong> - Bravery, unity, and blood</li>
+          <li><strong>Blue</strong> - Energy and the sky</li>
+          <li><strong>Green</strong> - Health and land</li>
+          <li><strong>Orange</strong> - Hospitality</li>
+          <li><strong>White</strong> - Purity and health</li>
+          <li><strong>Black</strong> - The people and struggles</li>
+        </ul>
+      </div>
+
+      <div class="content-section">
+        <h2 class="section-title">Ceremonies & Rites of Passage</h2>
+        <ul class="cultural-list">
+          <li><strong>Eunoto</strong> - Coming of age ceremony where warriors transition to junior elders</li>
+          <li><strong>Enkipaata</strong> - Pre-circumcision ceremony for young men</li>
+          <li><strong>Emuratare</strong> - Circumcision ceremony marking transition to warrior status</li>
+          <li><strong>Enkang oo-nkiri</strong> - Marriage ceremonies with traditional blessings</li>
+          <li><strong>Olngesherr</strong> - Meat-eating ceremony for warriors</li>
+        </ul>
+      </div>
+
+      <div class="content-section">
+        <h2 class="section-title">Food & Cuisine</h2>
+        <p class="section-text">
+          Traditional Maasai diet centers around cattle products: milk, meat, and blood. Milk is often mixed with 
+          blood drawn from cattle to create a nutritious drink. They also consume ugali (maize porridge), 
+          vegetables, and honey.
+        </p>
+        <ul class="cultural-list">
+          <li><strong>Milk & Blood</strong> - Traditional warrior drink combining cow's milk and blood</li>
+          <li><strong>Nyama Choma</strong> - Roasted meat, especially goat and beef</li>
+          <li><strong>Olpurda</strong> - Soup made from meat, bones, and herbs</li>
+          <li><strong>Emuroto</strong> - Ceremonial meat dishes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Leaders Tab -->
+    <div id="leaders" class="tab-content">
+      <div class="content-section">
+        <h2 class="section-title">Notable Leaders Past & Present</h2>
+        
+        <div class="leaders-grid">
+          <div class="leader-card">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Leader" class="leader-image">
+            <div class="leader-info">
+              <h3 class="leader-name">Oloibon Mbatian</h3>
+              <p class="leader-role">Historical Spiritual Leader (1860-1890)</p>
+              <p class="leader-bio">
+                Legendary Maasai prophet and medicine man who predicted major historical events and guided 
+                his people through challenging times of colonial encounter.
+              </p>
+            </div>
+          </div>
+
+          <div class="leader-card">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&q=80" alt="Leader" class="leader-image">
+            <div class="leader-info">
+              <h3 class="leader-name">Ole Sendeu</h3>
+              <p class="leader-role">Cultural Ambassador & Elder</p>
+              <p class="leader-bio">
+                Contemporary Maasai elder working to preserve traditional customs while advocating for 
+                education and sustainable development in Maasai communities.
+              </p>
+            </div>
+          </div>
+
+          <div class="leader-card">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&q=80" alt="Leader" class="leader-image">
+            <div class="leader-info">
+              <h3 class="leader-name">Joseph Ole Lenku</h3>
+              <p class="leader-role">Political Leader</p>
+              <p class="leader-bio">
+                Former Cabinet Secretary representing Maasai interests in national government, 
+                advocating for land rights and cultural preservation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nature & Wildlife Tab -->
+    <div id="nature" class="tab-content">
+      <div class="content-section">
+        <h2 class="section-title">Relationship with Nature</h2>
+        <p class="section-text">
+          The Maasai have lived in harmony with wildlife for centuries, sharing the same ecosystem with lions, 
+          elephants, and other wildlife. Their pastoral lifestyle and traditional beliefs have helped preserve 
+          vast areas of wilderness.
+        </p>
+        
+        <h3 style="margin: 30px 0 15px; color: #ea580c; font-size: 1.5rem;">Sacred Animals & Beliefs</h3>
+        <ul class="cultural-list">
+          <li><strong>Cattle</strong> - Sacred gift from Enkai (God), central to Maasai identity and survival</li>
+          <li><strong>Lions</strong> - Respected as symbols of bravery; historically hunted by warriors in coming-of-age rituals</li>
+          <li><strong>Elephants</strong> - Revered for wisdom and strength; protected through traditional conservation</li>
+          <li><strong>Giraffes</strong> - Seen as graceful beings sharing their grazing lands</li>
+        </ul>
+
+        <h3 style="margin: 30px 0 15px; color: #ea580c; font-size: 1.5rem;">Conservation Wisdom</h3>
+        <p class="section-text">
+          Maasai traditional knowledge includes sustainable grazing practices, water conservation, and wildlife 
+          protection. Their semi-nomadic lifestyle prevented overgrazing and allowed land to regenerate. 
+          Today, many Maasai communities are involved in wildlife conservancies, combining traditional wisdom 
+          with modern conservation.
+        </p>
+      </div>
+    </div>
+
+    <!-- Gallery Tab -->
+    <div id="gallery" class="tab-content">
+      <div class="content-section">
+        <h2 class="section-title">Photo Gallery</h2>
+        <div class="gallery">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&q=80" alt="Maasai Warriors">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80" alt="Maasai Beadwork">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&q=80" alt="Traditional Dance">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1534067783941-51c9c23ecefd?w=600&q=80" alt="Maasai Village">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=600&q=80" alt="Maasai Landscape">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1558084280-c559b7d370fa?w=600&q=80" alt="Maasai Culture">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contribute Section -->
+    <div class="contribute-box">
+      <h2>Help Us Preserve Maasai Heritage</h2>
+      <p>Do you have stories, photos, or knowledge to share about Maasai culture?</p>
+      <button class="contribute-btn">Contribute to This Page</button>
+    </div>
+  </div>
+
+  <script>
+    function openTab(tabName) {
+      // Hide all tab contents
+      const tabContents = document.querySelectorAll('.tab-content');
+      tabContents.forEach(content => content.classList.remove('active'));
+
+      // Remove active class from all tabs
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach(tab => tab.classList.remove('active'));
+
+      // Show selected tab content
+      document.getElementById(tabName).classList.add('active');
+
+      // Add active class to clicked tab
+      event.target.classList.add('active');
+
+      // Smooth scroll to content
+      window.scrollTo({
+        top: document.querySelector('.tabs').offsetTop - 20,
+        behavior: 'smooth'
+      });
+    }
+  </script>
 </body>
 </html>

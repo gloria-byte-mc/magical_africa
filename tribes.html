@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/cc4feaa5b5.js" crossorigin="anonymous"></script>
+   <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tribes2.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="contribute.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="add-map.css">
+</head>
+<body>
+  <div class="menu-overlay"></div>
+
+
+   <div class="hero-section">
+
+    
+
+    <div class="side-menu">
+      <div class="side-header">
+
+       <button class="close-btn">
+        <i class="fa-solid fa-x"></i>
+        <span>Close</span>
+
+       </button>
+
+       <button class="search-btn">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <span>Search</span>
+
+       </button>
+      </div>
+
+
+      <div class="side-content">
+
+        <ul>
+
+          <li id="home">Home <i class="fa-solid fa-chevron-right"></i></li>
+          <li id="tribe-page">Tribes <i class="fa-solid fa-chevron-right"></i></li>
+          <li>Language <i class="fa-solid fa-chevron-right"></i></li>
+          <li>About <i class="fa-solid fa-chevron-right"></i></li>
+          <li>Marketplace <i class="fa-solid fa-chevron-right"></i></li>
+
+        </ul>
+
+      </div>
+
+    </div>
+   
+    <div class="navbar">
+
+      <div class="item1">
+
+        <button class="menu">
+         <i class="fa-solid fa-bars"></i>
+          <span>Menu</span>
+        </button>
+
+        <button class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span>Search</span>
+        </button>
+
+      </div>
+
+
+      <div class="item2">
+       <h1 id="logo-header">Magical Africa</h1>
+      </div>
+
+
+
+<!-- Keep your existing item3 structure - just add the dropdown -->
+<div class="item3">
+  <a href="#" id="contact-us">Sign In</a>
+  <a href="#">
+    <i class="fa-regular fa-user" id="user-icon"></i>
+  </a>
+  <span class="Account-icon">G</span>
+  
+  <!-- Dropdown Menu - Separate from the icon -->
+  <div class="account-dropdown">
+    <p class="currently-in">Currently in</p>
+    
+    <div class="account-item active">
+      <div class="account-avatar">G</div>
+      <div class="account-details">
+        <h4>Gloria Nyatichi...</h4>
+        <p class="account-type">Personal</p>
+        <p class="account-email">gloriamachoka1@gmail.c...</p>
+      </div>
+      <i class="fa-solid fa-check"></i>
+    </div>
+    
+   
+    
+    <div class="dropdown-section-title">Your accounts</div>
+    
+    <div class="dropdown-option">
+      <span>Add Magical Africa account</span>
+    </div>
+    
+    <div class="dropdown-option logout-option">
+      <span>Log out</span>
+    </div>
+  </div>
+</div>
+       
+
+    </div>
+
+  
+    <div class="tribes-hero-content">
+
+      <div class="tribes-hero-content-text">
+      <h1>African Tribes & communities</h1>
+      <p>Explore the rich diversity of African cultures. Each community tells a unique story </p>
+      </div>
+
+
+      <!--
+        <div class="hero-boxes">
+
+    <div class="hero-box">
+    <i class="fa-solid fa-comments"></i>
+     <p>Learn Language</p>
+      
+    </div>
+
+    <div class="hero-box">
+
+      <i class="fa-solid fa-mask"></i>
+      <p>Explore Culture</p>
+
+    </div>
+
+    <div class="hero-box">
+
+      <i class="fa-solid fa-scroll"></i>
+      <p>Visit Antiques
+    </div>
+
+  </div>
+  -->
+
+
+      </div>
+
+     
+</div>
+
+
+<div class="search-section">
+
+  <h1>Find Your Tribe</h1>
+
+
+  <div class="search-box">
+
+    <input type="text" placeholder="Search tribes" id="search-tribe">
+
+    <select name="regions" id="regions" >
+
+      <option value="North Africa">All Regions</option>
+      <option value="North Africa">North Africa</option>
+      <option value="East Africa">East Africa</option>
+      <option value="West Africa">West Africa</option>
+      <option value="Southern Africa">Southern Africa</option>
+      
+    </select>
+
+    <select name="Languages" id="all-languages" >
+      
+      <option value="All-languages">All Languages</option>
+      <option value="Gusii">Gusii</option>
+      <option value="Yoruba">Yoruba</option>
+      <option value="Maa">Maa</option>
+      <option value="Gikuyu">Gikuyu</option>
+      <option value="Kamba">Kamba</option>
+      
+    </select>
+
+    
+  <div class="two-buttons">
+
+    <div class="two-buttons-text">
+     <p> <span class="no-tribes">6</span> communities found</p>
+    </div>
+
+
+  <div>
+    <button class="hide">Show Map</button>
+    <button>Add Your Community</button>
+
+  </div>
+    
+
+  </div>
+
+  </div>
+
+  
+  <div class="add-map">
+
+  <div class="map-wrapper">
+    <div class="africa-map">
+      <svg viewBox="0 0 800 900" xmlns="http://www.w3.org/2000/svg">
+        <!-- North Africa -->
+        <path class="region" data-region="north" d="M195,135 L220,120 L250,115 L270,120 L320,110 L380,115 L400,110 L415,120 L420,140 L480,125 L540,135 L590,140 L620,160 L630,200 L620,250 L590,280 L550,290 L520,280 L460,290 L420,270 L420,220 L380,250 L320,260 L280,240 L270,200 L270,155 L250,170 L220,175 L195,170 L180,155 L180,145 Z"/>
+        
+        <!-- West Africa -->
+        <path class="region" data-region="west" d="M140,280 L180,275 L220,260 L260,250 L280,240 L320,260 L330,310 L380,250 L420,270 L440,310 L430,360 L380,380 L420,400 L440,450 L420,490 L370,500 L320,480 L300,440 L290,480 L260,490 L245,460 L220,470 L200,450 L180,475 L160,460 L165,435 L145,420 L155,390 L170,390 L200,400 L220,380 L200,330 L160,340 L135,300 L140,280 Z"/>
+        
+        <!-- Central Africa -->
+        <path class="region" data-region="central" d="M330,370 L380,380 L420,420 L460,440 L510,430 L530,460 L510,500 L540,520 L560,580 L540,650 L480,680 L420,660 L400,620 L390,580 L375,595 L355,580 L345,580 L330,555 L335,525 L355,505 L350,470 L360,510 L390,530 L430,510 L440,460 L420,420 L370,440 L330,370 Z"/>
+        
+        <!-- East Africa -->
+        <path class="region" data-region="east" d="M510,430 L530,380 L520,320 L520,280 L590,280 L600,320 L590,340 L630,350 L640,390 L660,395 L700,400 L730,450 L720,550 L670,600 L640,560 L650,500 L660,460 L660,420 L620,510 L590,620 L620,650 L600,720 L540,730 L500,690 L510,640 L525,610 L510,580 L525,585 L535,575 L530,555 L510,560 L530,520 L560,580 L560,540 L570,500 L580,450 L550,420 L510,430 Z"/>
+        
+        <!-- Southern Africa -->
+        <path class="region" data-region="southern" d="M300,650 L340,580 L400,620 L420,660 L480,680 L540,690 L580,700 L590,780 L560,850 L520,870 L500,830 L450,1000 L380,1010 L310,990 L280,940 L260,840 L270,780 L300,720 L340,760 L360,820 L340,880 L360,890 L420,880 L450,830 L430,780 L490,770 L510,720 L470,720 L520,710 L530,660 L545,720 L525,730 L515,700 L540,650 L480,680 L420,660 L400,700 L400,750 L340,760 L300,720 L300,650 Z"/>
+      </svg>
+    </div>
+
+    <!-- Tooltip -->
+    <div class="tooltip" id="tooltip">
+      <h3 id="tooltipTitle">Region Name</h3>
+      <p class="communities-label">Communities:</p>
+      <div class="communities-list" id="tooltipCommunities"></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+
+<div class="communities-section">
+
+  
+  <h1 class="community-heading">Our communities</h1>
+  <p class="community-sub">Discover the rich tapestry of African cultures</p>
+
+ 
+
+  <div class="community">
+    <div class="prev-button" id="prevBtn">
+      <i class="fa-solid fa-chevron-left" id="prev2"></i>
+    </div>
+
+    <div class="carousel-container">
+      <div class="the-communities" id="carousel">
+        
+        <!-- Slide 1 (3 communities) -->
+        <div class="community-slide">
+          <div class="community1">
+            <div class="community-image zulu"></div>
+            <div class="community-content">
+              <h1>Zulu</h1>
+              <p>The largest ethnic group in South Africa with rich warrior traditions.</p>
+              <div class="community-content-spans">
+                <span class="info1">📍<p class="info-p">South Africa</p></span>
+                <span class="info1">👥<p class="info-p">12M+ people</p></span>
+                <span class="info1">📖<p class="info-p">Language: isiZulu</p></span>
+              </div>
+              <button class="info-button">Explore Culture</button>
+            </div>
+          </div>
+
+          <div class="community1">
+            <div class="community-image yoruba"></div>
+            <div class="community-content">
+              <h1>Yoruba</h1>
+              <p>One of the largest ethnic groups in Africa with profound cultural influence.</p>
+              <div class="community-content-spans">
+                <span class="info1">📍<p class="info-p">Nigeria, Benin, Togo</p></span>
+                <span class="info1">👥<p class="info-p">45M+ people</p></span>
+                <span class="info1">📖<p class="info-p">Language: Yorùbá</p></span>
+              </div>
+              <button class="info-button">Explore Culture</button>
+            </div>
+          </div>
+
+          <div class="community1">
+            <div class="community-image kikuyu"></div>
+            <div class="community-content">
+              <h1>Kikuyu</h1>
+              <p>Kenya's largest ethnic group with rich agricultural traditions and culture.</p>
+              <div class="community-content-spans">
+                <span class="info1">📍<p class="info-p">Kenya</p></span>
+                <span class="info1">👥<p class="info-p">8M+ people</p></span>
+                <span class="info1">📖<p class="info-p">Language: Gĩkũyũ</p></span>
+              </div>
+              <button class="info-button">Explore Culture</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 (3 communities) -->
+        <div class="community-slide">
+          <div class="community1">
+            <div class="community-image maasai"></div>
+            <div class="community-content">
+              <h1>Maasai</h1>
+              <p>Semi-nomadic people famous for their distinctive customs and dress.</p>
+              <div class="community-content-spans">
+                <span class="info1">📍<p class="info-p">Kenya, Tanzania</p></span>
+                <span class="info1">👥<p class="info-p">1.5M+ people</p></span>
+                <span class="info1">📖<p class="info-p">Language: Maa</p></span>
+              </div>
+              <button class="info-button">Explore Culture</button>
+            </div>
+          </div>
+
+          <div class="community1">
+            <div class="community-image ashanti"></div>
+            <div class="community-content">
+              <h1>Ashanti</h1>
+              <p>Known for their gold craftsmanship and the powerful Ashanti Empire.</p>
+              <div class="community-content-spans">
+                <span class="info1">📍<p class="info-p">Ghana</p></span>
+                <span class="info1">👥<p class="info-p">11M+ people</p></span>
+                <span class="info1">📖<p class="info-p">Language: Twi</p></span>
+              </div>
+              <button class="info-button">Explore Culture</button>
+            </div>
+          </div>
+
+          <div class="community1">
+            <div class="community-image hausa"></div>
+            <div class="community-content">
+              <h1>Hausa</h1>
+              <p>One of the largest ethnic groups in Africa, known for trade and commerce.</p>
+              <div class="community-content-spans">
+                <span class="info1">📍<p class="info-p">Nigeria, Niger</p></span>
+                <span class="info1">👥<p class="info-p">80M+ people</p></span>
+                <span class="info1">📖<p class="info-p">Language: Hausa</p></span>
+              </div>
+              <button class="info-button">Explore Culture</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 (3 communities) -->
+        <div class="community-slide">
+          <div class="community1">
+            <div class="community-image igbo"></div>
+            <div class="community-content">
+              <h1>Igbo</h1>
+              <p>Known for their entrepreneurial spirit and rich artistic traditions across generations.</p>
+              <div class="community-content-spans">
+                <span class="info1">📍<p class="info-p">Nigeria</p></span>
+                <span class="info1">👥<p class="info-p">45M+ people</p></span>
+                <span class="info1">📖<p class="info-p">Language: Igbo</p></span>
+              </div>
+              <button class="info-button">Explore Culture</button>
+            </div>
+          </div>
+
+          <div class="community1">
+            <div class="community-image amhara"></div>
+            <div class="community-content">
+              <h1>Amhara</h1>
+              <p>Historically dominant group in Ethiopia with ancient Christian heritage.</p>
+              <div class="community-content-spans">
+                <span class="info1">📍<p class="info-p">Ethiopia</p></span>
+                <span class="info1">👥<p class="info-p">32M+ people</p></span>
+                <span class="info1">📖<p class="info-p">Language: Amharic</p></span>
+              </div>
+              <button class="info-button">Explore Culture</button>
+            </div>
+          </div>
+
+          <div class="community1">
+            <div class="community-image berber"></div>
+            <div class="community-content">
+              <h1>Berber</h1>
+              <p>Indigenous people of North Africa with ancient traditions and languages.</p>
+              <div class="community-content-spans">
+                <span class="info1">📍<p class="info-p">Morocco, Algeria, Libya</p></span>
+                <span class="info1">👥<p class="info-p">30M+ people</p></span>
+                <span class="info1">📖<p class="info-p">Language: Tamazight</p></span>
+              </div>
+              <button class="info-button">Explore Culture</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 (3 communities) -->
+        <div class="community-slide">
+          <div class="community1">
+            <div class="community-image swahili"></div>
+            <div class="community-content">
+              <h1>Swahili</h1>
+              <p>Coastal people known for their maritime trade and cultural fusion for centeries.</p>
+              <div class="community-content-spans">
+                <span class="info1">📍<p class="info-p">Kenya, Tanzania, Zanzibar</p></span>
+                <span class="info1">👥<p class="info-p">2M+ people</p></span>
+                <span class="info1">📖<p class="info-p">Language: Kiswahili</p></span>
+              </div>
+              <button class="info-button">Explore Culture</button>
+            </div>
+          </div>
+
+          <div class="community1">
+            <div class="community-image wolof"></div>
+            <div class="community-content">
+              <h1>Wolof</h1>
+              <p>Dominant ethnic group in Senegal known for their hospitality and unity.</p>
+              <div class="community-content-spans">
+                <span class="info1">📍<p class="info-p">Senegal, Gambia</p></span>
+                <span class="info1">👥<p class="info-p">6M+ people</p></span>
+                <span class="info1">📖<p class="info-p">Language: Wolof</p></span>
+              </div>
+              <button class="info-button">Explore Culture</button>
+            </div>
+          </div>
+
+          <div class="community1">
+            <div class="community-image fulani"></div>
+            <div class="community-content">
+              <h1>Fulani</h1>
+              <p>Nomadic pastoralists spread across West Africa with distinct traditions.</p>
+              <div class="community-content-spans">
+                <span class="info1">📍<p class="info-p">West Africa (20+ countries)</p></span>
+                <span class="info1">👥<p class="info-p">40M+ people</p></span>
+                <span class="info1">📖<p class="info-p">Language: Fulfulde</p></span>
+              </div>
+              <button class="info-button">Explore Culture</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="next-button" id="nextBtn">
+      <i class="fa-solid fa-chevron-right" id="next2"></i>
+    </div>
+  </div>
+
+   <div class="pagination-dots">
+    <div class="dot active" data-slide="0"></div>
+    <div class="dot" data-slide="1"></div>
+    <div class="dot" data-slide="2"></div>
+    <div class="dot" data-slide="3"></div>
+  </div>
+  
+
+</div>
+
+<div class="contribute-story">
+
+  <div class="contribute-text">
+ 
+    <h1>Is Your Community Missing?</h1>
+    <p>Help us preserve and share your culture. Add your tribe's story, traditions, language, and heritage to Magical.Africa.</p>
+
+    <button class="contribute-btn">Contribute Story</button>
+
+
+  </div>
+
+</div>
+
+
+<div class="footer">
+
+    <div class="footer-section">
+    <div class="link1">
+      <a href="index.html">Magical Africa</a>
+
+      <p>Where the Real African Story lives</p>
+
+      <div class="footer-icons">
+
+        <span><i class="fa-brands fa-facebook-f"></i></span>
+        <span><i class="fa-brands fa-instagram"></i></span>
+        <span><i class="fa-brands fa-x-twitter"></i></span>
+        <span><i class="fa-brands fa-tiktok"></i></span>
+       
+      </div>
+
+    </div>
+
+    <div class="link2">
+
+    <h3>Quick Links</h3>
+
+    <div class="link2-a">
+      <a href="index.html">Home</a>
+      <a href="tribes.html">Tribes</a>
+      <a href="#">Languages</a>
+      <a href="#">About </a>
+      <a href="#">Marketplace</a>
+      <a href="#">Contact</a>
+    </div>
+
+    </div>
+
+    <div class="link3">
+
+      <p>Terms of Use</p>
+      <p>Privacy Policy</p>
+      <p>Cookie Policy</p>
+      <p>Cookie Settings</p>
+
+    </div>
+
+    </div>
+
+    <hr class="footer-hr">
+
+    <p class="copyright">© 2026 Magical.africa. All rights reserved</p>
+    
+
+  </div>
+
+  <script>
+    const Home = document.getElementById("home");
+
+ Home.addEventListener('click', ()=>{
+  window.location.href = "index.html"
+
+});
+
+  const tribePage = document.getElementById('tribe-page');
+
+  tribePage.addEventListener('click', (e)=>{
+  e.preventDefault();
+
+  window.location.href = "tribes.html"
+  });
+
+
+  </script>
+
+   <script type="module" src="main.js"></script>
+  <script type="module" src="main2.js"></script>
+  <script type="module" src="main3.js"></script>
+  <script type="module" src="main4.js"></script>
+  <script type="module" src="main5.js"></script>
+  <script type="module" src="main6.js"></script>
+  <script type="module" src="carousel.js"></script>
+  <script type="module" src="hero-coursel.js"></script>
+  <script type="module" src="tribes.js"></script>
+  <script type="module" src="add-map.js"></script>
+  
+  
+</body>
+</html>

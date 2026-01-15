@@ -1,0 +1,190 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.025rem;
+  line-height: 1.5rem;
+  
+}
+
+
+    .add-map {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #faf9f7;
+      min-height: 50vh;
+      padding-bottom: 3rem;
+      margin-top: 3rem;
+      width: 100%;
+       
+    }
+
+ 
+
+    .add-map h1 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: black;
+      text-align: center;
+    }
+
+    .add-map p {
+      font-size: 1rem;
+      color: black;
+      font-weight: 400;
+      text-align: center;
+      padding-top: 1rem;
+    }
+
+    .map-wrapper {
+      position: relative;
+      
+    }
+
+    .africa-map {
+      width: 600px;
+      height: 500px;
+    }
+
+    .africa-map svg {
+      width: 100%;
+      height: 100%;
+      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+    }
+
+    .africa-map svg path {
+      fill: #e8e0d8;
+      stroke: #fff;
+      stroke-width: 0.5;
+      cursor: pointer;
+      transition: fill 0.3s ease;
+    }
+
+    .africa-map svg path:hover {
+      fill: rgb(181, 161, 145);
+    }
+
+    /* Tooltip */
+    .tooltip {
+      position: absolute;
+      background-color: white;
+      border: 0.5px solid #e5e3e3;
+      padding: 1rem 1.5rem;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 100;
+      min-width: 200px;
+      max-width: 280px;
+    }
+
+    .tooltip.show {
+      opacity: 1;
+    }
+
+    .tooltip h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #333;
+      margin-bottom: 0.5rem;
+      border-bottom: 2px solid #EA580C;
+      padding-bottom: 0.5rem;
+    }
+
+    .tooltip p {
+      font-size: 0.8rem;
+      color: #666;
+      padding-top: 0;
+      text-align: left;
+    }
+
+    .tooltip .communities-label {
+      font-size: 0.75rem;
+      color: #999;
+      margin-top: 0.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .tooltip .communities-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .tooltip .community-tag {
+      background-color: #1f6f43;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.75rem;
+      color: white;
+    }
+
+@media screen and (min-width:1440px) {
+  .add-map{
+    margin-top: 5rem;
+  }
+  .africa-map{
+    height: 500px;
+  }
+}
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .add-map {
+        padding: 2rem 1.5rem;
+      }
+
+      .add-map h1 {
+        font-size: 1.3rem;
+      }
+
+      .add-map p {
+        font-size: 0.9rem;
+      }
+
+      .africa-map {
+        width: 100%;
+        max-width: 400px;
+        height: 450px;
+      }
+
+      .tooltip {
+        min-width: 160px;
+        max-width: 220px;
+        padding: 0.75rem 1rem;
+      }
+
+      .tooltip h3 {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .add-map {
+        padding: 1.5rem 1rem;
+      }
+
+      .add-map h1 {
+        font-size: 1.2rem;
+      }
+
+      .africa-map {
+        max-width: 320px;
+        height: 380px;
+      }
+
+      .tooltip {
+        min-width: 140px;
+        max-width: 180px;
+        padding: 0.5rem 0.75rem;
+      }
+
+      .tooltip h3 {
+        font-size: 0.9rem;
+      }
+
+      .tooltip .community-tag {
+        font-size: 0.7rem;
+      }
+    }
