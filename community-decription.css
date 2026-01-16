@@ -159,7 +159,7 @@ gap: 20px;
 }
 
 .identity-image2{
-  background-image: url(images/maasai.jpg) !important;
+  background-image: url(images/drums2.jpg) !important;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -206,7 +206,7 @@ gap: 20px;
 @media screen and (min-width:1440px) {
   .identity-life{
     padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
   }
   .history-migration{
     padding-top: 6rem;
@@ -215,4 +215,16 @@ gap: 20px;
   .preserve-box{
     max-width: 800px;
   }
+  .history-image{
+    height: 700px ;
+
+  }
+
+  .history-text{
+    height: 700px;
+  }
+  .identity-image1, .identity-image2{
+    height: 500px;
+  }
+
 }

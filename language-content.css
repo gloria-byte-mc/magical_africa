@@ -192,20 +192,31 @@ gap: 20px;
   color: white;
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (min-width:1440px) {
   .listen-audio{
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
   .Common-phrases{
-    padding-top: 4rem;
+    padding-top: 6rem;
+    
   }
   .phrases{
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
+    margin-top: 4rem;
+  }
+  .phrase-boxes{
+    gap: 50px;
   }
  .langauge-content-text{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  gap: 3rem;
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+  gap: 5rem;
+ }
+ .listen-audio-text{
+height: 700px;
+ }
+ .listen-audio-video{
+height: 700px;
  }
 }
