@@ -1,0 +1,211 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.025rem;
+  line-height: 1.5rem;
+  }
+
+  .language-content{
+    margin-top: 6rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .langauge-content-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 13rem;
+    padding-right: 13rem;
+    align-items: center;
+     background-color: rgb(242, 239, 235);
+     padding-top: 2rem;
+     padding-bottom: 2rem;
+  }
+  .langauge-content-text h1{
+    font-size: 1.5rem;
+  }
+
+  .langauge-content-text h1 span{
+    color: rgb();
+  }
+
+  .langauge-content-text p{
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  .langauge-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+   
+  }
+
+  .langauge-buttons button{
+     padding: 0.5rem 1rem;
+    background-color: #1f6f43;
+    border: none;
+    color: white;
+    font-weight: 600;
+  }
+
+  .langauge-buttons button:hover{
+    background-color: #145a34;
+  }
+
+  .Common-phrases{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 3rem;
+  }
+
+  .Common-phrases h1{
+    font-size: 1.5rem;
+  }
+
+  .Common-phrases h1 span{
+    color: rgb(181, 161,145);
+  }
+
+  .phrases{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    gap: 50px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .phrase-boxes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .boxy{
+    display: flex;
+    border-bottom:1px solid black ;
+    padding-top:0.5rem ;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    gap: 8px;
+    flex-direction: column;
+  }
+
+  .boxy-p1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between !important;
+  align-items: center;
+  font-size: 1rem;
+ width: 100%;
+}
+
+.boxy-p2{
+  font-size: 0.875rem;
+  display: none;
+}
+
+
+
+.boxy-p1 i{
+ color: rgb(210, 123, 58);
+  font-size: 0.875rem;
+  
+}
+
+.toggle-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.toggle-icon.rotate {
+  transform: rotate(180deg);
+}
+
+  .phrase-image{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .listen-audio{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(242, 239, 235);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  }
+
+  .listen-audio-text{
+height: 500px;
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 20px;
+}
+
+.listen-audio-text h1{
+  font-size: 1.2rem;
+  font-weight: 600;
+  align-self: self-start;
+}
+
+.listen-audio-text p{
+  font-size: 0.875rem;
+}
+
+.listen-audio-video{
+  height: 500px;
+  flex: 1;
+  background-image: url(images/pyramids.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.play{
+  width: 100%;
+  max-width: 150px;
+  padding: 0.5rem 0;
+  border: 1px solid rgb(181, 161,145);
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.play:hover{
+  background-color: rgb(181, 161,145);
+  color: white;
+}
+
+@media screen and (max-width:1440px) {
+  .listen-audio{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .Common-phrases{
+    padding-top: 4rem;
+  }
+  .phrases{
+    margin-bottom: 4rem;
+  }
+ .langauge-content-text{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  gap: 3rem;
+ }
+}

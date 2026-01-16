@@ -197,33 +197,7 @@ ul li span{
   height: 0.5px;
   width: 70px;
 }
-/*
-@media screen and (min-width:1440px) {
-  .marketplace{
-    
-    padding-bottom: 4rem;
-  }
-  .marketplace h1{
-    padding-top: 4rem;
-  }
 
-  .market-section{
-    margin-top: 6rem;
-    height: 500px;
-    padding: 0px 120px;
-  }
-
-  .show-all2{
-    padding-top: 6rem;
-  }
-
-  ul{
-    margin-top: 2rem;
-  }
-
- 
-}
-  */
 
   @media screen and (min-width:1440px) {
     .market-section{

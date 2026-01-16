@@ -183,10 +183,7 @@
 
      <button class="sign-in">Sign In</button>
 
-     <!--
-     <p class="paragraph">This site is protected by reCAPTCHA and the Google <span>Privacy Policy</span> and <span>Terms of Service</span> apply
-    </p>
-    -->
+   
 
     <button class="sign-with-google">
       <img src="images/google-logo.png" alt="google">
@@ -490,12 +487,12 @@
           <div class="community1">
             <div class="community-image zulu"></div>
             <div class="community-content">
-              <h1>Zulu</h1>
-              <p>The largest ethnic group in South Africa with rich warrior traditions.</p>
+              <h1>Maasai</h1>
+              <p>Semi-nomadic people famous for their distinctive customs and dress.</p>
               <div class="community-content-spans">
-                <span class="info1">📍<p class="info-p">South Africa</p></span>
-                <span class="info1">👥<p class="info-p">12M+ people</p></span>
-                <span class="info1">📖<p class="info-p">Language: isiZulu</p></span>
+                <span class="info1">📍<p class="info-p">Kenya, Tanzania</p></span>
+                <span class="info1">👥<p class="info-p">1.5M+ people</p></span>
+                <span class="info1">📖<p class="info-p">Language: Maa</p></span>
               </div>
               <button class="info-button">Explore Culture</button>
             </div>
@@ -535,12 +532,12 @@
           <div class="community1">
             <div class="community-image maasai"></div>
             <div class="community-content">
-              <h1>Maasai</h1>
-              <p>Semi-nomadic people famous for their distinctive customs and dress.</p>
+              <h1>Zulu</h1>
+              <p>The largest ethnic group in South Africa with rich warrior traditions.</p>
               <div class="community-content-spans">
-                <span class="info1">📍<p class="info-p">Kenya, Tanzania</p></span>
-                <span class="info1">👥<p class="info-p">1.5M+ people</p></span>
-                <span class="info1">📖<p class="info-p">Language: Maa</p></span>
+                <span class="info1">📍<p class="info-p">South Africa</p></span>
+                <span class="info1">👥<p class="info-p">12M+ people</p></span>
+                <span class="info1">📖<p class="info-p">Language: isiZulu</p></span>
               </div>
               <button class="info-button">Explore Culture</button>
             </div>
@@ -765,6 +762,12 @@
 
   window.location.href = "tribes.html"
   });
+
+  const InfoBtn = document.querySelector('.info-button');
+  InfoBtn.addEventListener('click', (e)=>{
+    e.preventDefault();
+    window.location.href = 'maasaai.html'
+  })
 
 
   </script>
