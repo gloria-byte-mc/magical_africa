@@ -91,3 +91,10 @@
   font-weight: 400;
 }
 
+@media screen and (min-width:1440px) {
+  .location-page{
+    padding-top: 4rem;
+    gap: 5rem;
+  }
+}
+
