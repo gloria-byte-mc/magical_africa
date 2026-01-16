@@ -63,6 +63,9 @@
   font-weight: 400;
 }
 
+.location-page h1 span{
+  color: rgb(181, 161, 145);
+}
 .page-icon{
   display: flex;
   flex-direction: column;

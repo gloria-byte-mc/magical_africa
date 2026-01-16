@@ -204,6 +204,8 @@ gap: 20px;
   .phrases{
     margin-bottom: 6rem;
     margin-top: 4rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
   }
   .phrase-boxes{
     gap: 50px;
