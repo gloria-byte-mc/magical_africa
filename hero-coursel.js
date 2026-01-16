@@ -9,7 +9,7 @@ const heroCarousel = {
       
     },
       {
-      image : 'images/swahili.jpeg',
+      image : 'images/swahili-community.jpg',
       title: 'Karibu Magical Africa',
       subtitle: 'Safari Halisi ya Afrika',
       name: '(Swahili)',
