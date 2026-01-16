@@ -9,28 +9,28 @@ const heroCarousel = {
       
     },
       {
-      image : 'images/Igbo.jpg',
+      image : 'images/swahili.jpeg',
       title: 'Karibu Magical Africa',
       subtitle: 'Safari Halisi ya Afrika',
       name: '(Swahili)',
       image2 : 'images/Kenyan-flag.png'
     },
     {
-      image: 'images/maasai.jpg', // Replace with your actual image path
+      image: 'images/maasai.jpg', 
       title: 'Pooki sidai eitu oshi',
       subtitle: 'Nwee ahụmịhe omenala bara ụba',
       name: '(Maasai)',
       image2 : 'images/Kenyan-flag.png'
     },
     {
-      image: 'images/Igbo.jpg', // Replace with your actual image path
+      image: 'images/Igbo.jpg', 
       title: 'Mee ka ị mata omenala bara ụba',
       subtitle: 'Mee emume ihe nketa Afrịka',
       name: '(Igbo)',
       image2 : 'images/Nigeria-flag.png'
     },
     {
-      image: 'images/zulu.jpg', // Replace with your actual image path
+      image: 'images/zulu.jpg', 
       title: 'Hlola izimangaliso zemvelo',
       subtitle: 'Ubuhle obudlula umcabango',
       name: '(Zulu)',
@@ -39,7 +39,7 @@ const heroCarousel = {
   
 
   ],
-  autoPlayInterval: 10000 // Change slide every 5 seconds
+  autoPlayInterval: 10000 
 };
 
 // Get DOM elements
