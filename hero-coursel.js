@@ -30,7 +30,7 @@ const heroCarousel = {
       image2 : 'images/Nigeria-flag.png'
     },
     {
-      image: 'images/Zulu.jpg', // Replace with your actual image path
+      image: 'images/zulu.jpg', // Replace with your actual image path
       title: 'Hlola izimangaliso zemvelo',
       subtitle: 'Ubuhle obudlula umcabango',
       name: '(Zulu)',
