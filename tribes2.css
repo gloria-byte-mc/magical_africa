@@ -36,120 +36,7 @@
   font-weight: 400;
   width: 70%;
 }
-/*
 
-.communities-section{
-  display: flex;
-  height: fit-content;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  flex-direction: column;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  
-}
-
-.community-heading{
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: black;
-  text-align: center;
-}
-
-.community-sub{
-  font-size: 1rem;
-  color: black;
-  font-weight: 400;
-  text-align: center;
-  padding-top: 1rem;
-}
-
-.community{
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-  width: 100%;
-  margin-top: 2rem;
-}
-
-.the-communities{
-width: 100%;
-display: flex;
-flex-direction: row;
-gap: 30px;
-}
-
-.prev-button{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.next-button{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.community1{
-height: 500px;
-flex: 1;
-border-bottom: 0.5px solid #e5e3e3;
-border-left: 0.5px solid #e5e3e3;
-border-right: 0.5px solid #e5e3e3;
-display: flex;
-flex-direction: column;
-}
-
-.community-image{
-background-image: url(images/pyramids.jpg);
-flex: 1;
-}
-
-.community-content{
-  flex: 1.3;
-  display: flex;
-  flex-direction: column;
-  padding-top: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-
-}
-
-.community-content h1{
-  font-size: 1.3rem;
-}
-.community-content p{
-  font-size: 0.875rem;
-  padding-top: 10px;
-}
-
-.community-content-spans{
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-}
-
-.info1{
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-}
-
-.info-button{
-  margin-top: 10px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: rgb(181, 161, 145);
-  color: white;
-  border: none;
-  font-size: 1rem;
-  font-weight: 600;
-}
-  */
 
    .communities-section {
       display: flex;
@@ -243,7 +130,7 @@ flex: 1;
 
     /* Different background images for each community */
     .community-image.zulu {
-      background-image: url('images/zulu.jpg');
+      background-image: url('images/maasai-women.jpg');
     }
     .community-image.yoruba {
       background-image: url('images/African2.jpg');
