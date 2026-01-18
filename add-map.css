@@ -164,6 +164,7 @@
     @media (max-width: 480px) {
       .add-map {
         padding: 1.5rem 1rem;
+        margin-top: 0rem;
       }
 
       .add-map h1 {

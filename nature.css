@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.025rem;
+}
+
+.nature-interaction{
+  display:flex;
+  flex-direction:column;
+  padding-top: 5rem;
+  
+ 
+}
+
+.nature-div{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  background-color:  rgb(242, 239, 235);
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.nature-text{
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+.nature-image{
+  background-image: url(images/kitenge.jpg);
+  background-position: center;
+  background-size: cover;
+  height:500px ;
+  width: 100%;
+}
+
+.nature-text h1{
+  font-size: 1.2rem;
+  font-weight: bold;
+  align-self: self-start;
+}
+
+.nature-text p{
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.sacred-animals{
+padding-top: 2rem;
+
+}
+.sacred-animals h1{
+  font-size: 1.5rem;
+}
+
+.animals{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 4rem;
+  padding-left: 8rem;
+  padding-right: 8rem ;
+}
+
+.animal1{
+  padding: 1.2rem 1rem;
+  border: 1px solid #e5e3e3;
+  border-left:4px solid #EA580C;
+}
+.animal1 p{
+  font-size: 0.875rem;
+}
+
+.animal1 p span{
+ font-size: 1.1rem;
+ font-weight: 600;
+ color: #EA580C;
+}
+
+@media screen and (min-width:1440px) {
+  .nature-text{
+    height: 700px;
+  }
+  .nature-image{
+    height: 700px;
+  }
+  .nature-div{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .sacred-animals{
+    padding-top: 4rem;
+    
+  }
+
+  .animal1{
+    padding: 2rem 1rem;
+  }
+
+  .animals{
+    gap:40px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .nature-interaction{
+    
+  }
+  .nature-div{
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 40px;
+  }
+  .nature-text{
+    justify-content: start;
+    height: fit-content;
+  }
+  .animals{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .animal1{
+    padding: 1.5rem 1rem;
+  }
+}

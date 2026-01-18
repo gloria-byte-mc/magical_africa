@@ -337,6 +337,13 @@
       .next-button i {
         font-size: 0.9rem;
       }
+      .tribes-hero-content h1{
+        line-height: 1.7rem;
+      }
+        .tribes-hero-content{
+        padding-left: 1rem;
+        
+      }
     }
 
     /* Mobile */
@@ -344,8 +351,8 @@
       .communities-section {
         padding-left: 1rem;
         padding-right: 1rem;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
       }
 
       .community {
@@ -354,16 +361,16 @@
       }
 
       .community-heading {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
       }
 
       .community-sub {
         font-size: 0.85rem;
-        padding-top: 0.5rem;
+        padding-top: 1rem;
       }
 
       .community-slide {
-        gap: 15px;
+        gap: 30px;
       }
 
       .community1 {
@@ -375,11 +382,11 @@
       }
 
       .community-content h1 {
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
 
       .community-content p {
-        font-size: 0.75rem;
+        font-size: 0.875rem;
         padding-top: 8px;
       }
 
@@ -408,7 +415,7 @@
       }
 
       .pagination-dots {
-        margin-top: 1.5rem;
+        margin-top: 2rem;
         gap: 8px;
       }
 
@@ -419,5 +426,16 @@
 
       .dot.active {
         width: 24px;
+      }
+      .tribes-hero-content h1{
+        line-height: 1.7rem;
+        font-size: 1.4rem;
+      }
+      .tribes-hero-content p{
+        font-size: 1rem;
+      }
+      .tribes-hero-content{
+        padding-left: 1rem;
+        
       }
     }

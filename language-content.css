@@ -61,6 +61,7 @@
     flex-direction: column;
     gap: 10px;
     padding-top: 3rem;
+    height: fit-content;
   }
 
   .Common-phrases h1{
@@ -222,3 +223,46 @@ height: 700px;
 height: 700px;
  }
 }
+
+
+@media screen and (max-width:768px) {
+  .langauge-content-text{
+    padding-left:1rem ;
+    padding-right:1rem ;
+    align-items: flex-start;
+  }
+  .langauge-content-text p{
+    text-align: start;
+  }
+
+  .phrases{
+    flex-direction: column !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 40px;
+    padding-bottom: 3rem;
+    margin-top: 3rem;
+  }
+
+  .phrase-boxes{
+    gap: 40px;
+  }
+
+  .listen-audio{
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 40px;
+    
+  }
+  .listen-audio-video{
+    height:100%;
+    min-height: 500px;
+    width: 100%;
+  }
+
+  .listen-audio-text{
+  height: auto;
+  }
+}
+

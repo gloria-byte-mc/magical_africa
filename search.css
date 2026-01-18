@@ -121,3 +121,15 @@ font-size: 0.875rem;
     
   }
 }
+
+@media screen and (max-width:480px) {
+  .two-buttons{
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 2rem;
+    gap: 30px;
+  }
+  .search-box{
+    gap: 30px;
+  }
+}

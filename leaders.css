@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.025rem;
+}
+
+.leaders-section{
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding-top: 5rem;
+}
+
+.leaders-section h1{
+  font-size: 1.5rem;
+}
+
+.leaders-container{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  align-items:center;
+  margin-top: 4rem;
+}
+
+.chev-prev{
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+.chev-next{
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+
+
+.leaders-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.leaders-wrappers {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.5s ease-in-out;
+  width: 200%; /* 2 slides */
+}
+
+.leaders-slide {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 50%; /* Each slide takes half */
+  flex-shrink: 0;
+}
+
+.leader1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e3e3;
+}
+
+.leader-image {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #e8e0d8;
+}
+
+/* Different images for each leader */
+.leader-img1 {
+  background-image: url('images/African-storytelling.jpg');
+}
+.leader-img2 {
+  background-image: url('images/drums.jpg');
+}
+.leader-img3 {
+  background-image: url('images/explore-identity.jpg');
+}
+.leader-img4 {
+  background-image: url('images/hammer.jpg');
+}
+.leader-img5 {
+  background-image: url('images/explore-identity.jpg');
+}
+.leader-img6 {
+  background-image: url('images/Igbo.jpg');
+}
+
+.leader-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.leader-info h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.leader-info p {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.period{
+  color: #EA580C !important;
+ 
+}
+
+.leader-desc {
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .leaders-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .leader-image {
+    height: 250px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .leaders-slide{
+    gap: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .leaders-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .leaders-slide {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .leader-image {
+    height: 200px;
+  }
+}
