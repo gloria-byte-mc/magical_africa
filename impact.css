@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.025rem;
+}
+
+.our-impact{
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-impact h1{
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.our-impact p{
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+
+.impact-boxes{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 4rem;
+ width: 100%;
+ align-items: center;
+ justify-content: center;
+ padding-bottom: 2rem;
+}
+
+.impact1{
+  width: 100%;
+  max-width: 220px;
+  height: 200px;
+  border: 1px solid #e5e3e3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.impact1 h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+ color: rgb(210, 123, 58);
+}
+
+.magical-achievements{
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+.magical-achievements h1{
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 400;
+}
+.achievements{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  gap: 30px;
+}
+
+.achievement1{
+  width: 100%;
+  padding: 1.2rem 1rem;
+  border: 1px solid #e5e3e3;
+  border-left:4px solid #EA580C;
+}
+
+.achievement1 p{
+  font-size: 1rem;
+}
+
+
+@media screen and (min-width:1440px) {
+  .our-impact{
+    padding-top: 4rem;
+  }
+ .achievements{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+ }
+ .achievement1{
+  padding: 1.5rem 1rem;
+ }
+}
+

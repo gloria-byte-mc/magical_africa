@@ -371,3 +371,12 @@ authOverlay.addEventListener("click", (e) => {
 
   window.location.href = "tribes.html"
   });
+
+
+const AboutPage = document.querySelector('.about-sec');
+  AboutPage.addEventListener('click', (e)=>{
+e.preventDefault();
+
+window.location.href = "about.html"
+
+  });

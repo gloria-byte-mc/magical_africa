@@ -53,8 +53,8 @@
 
           <li id="home">Home <i class="fa-solid fa-chevron-right"></i></li>
           <li id="tribe-page">Tribes <i class="fa-solid fa-chevron-right"></i></li>
+          <li class="about-sec">About <i class="fa-solid fa-chevron-right"></i></li>
           <li>Language <i class="fa-solid fa-chevron-right"></i></li>
-          <li>About <i class="fa-solid fa-chevron-right"></i></li>
           <li>Marketplace <i class="fa-solid fa-chevron-right"></i></li>
 
         </ul>
@@ -707,7 +707,7 @@
       <a href="index.html">Home</a>
       <a href="tribes.html">Tribes</a>
       <a href="#">Languages</a>
-      <a href="#">About </a>
+      <a href="about.html">About </a>
       <a href="#">Marketplace</a>
       <a href="#">Contact</a>
     </div>
@@ -752,7 +752,16 @@
   InfoBtn.addEventListener('click', (e)=>{
     e.preventDefault();
     window.location.href = 'maasaai.html'
-  })
+  });
+
+
+  const AboutPage = document.querySelector('.about-sec');
+  AboutPage.addEventListener('click', (e)=>{
+e.preventDefault();
+
+window.location.href = "about.html"
+
+  });
 
 
   </script>
