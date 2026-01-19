@@ -92,9 +92,16 @@
  .achievements{
   padding-top: 4rem;
   padding-bottom: 4rem;
+  padding-left: 17rem;
+  padding-right: 17rem;
  }
  .achievement1{
   padding: 1.5rem 1rem;
+ }
+
+ .impact1{
+  max-width: 320px;
+  height: 300;
  }
 }
 

@@ -154,4 +154,8 @@ background-color: #145a34;
   .about-footer-buttons{
     padding-top: 1.8rem;
   }
+  .team1{
+    height: 700px;
+    max-width: 500px;
+  }
 }
